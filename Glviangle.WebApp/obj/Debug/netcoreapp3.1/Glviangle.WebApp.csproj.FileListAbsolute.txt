@@ -93,3 +93,6 @@ E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Glviangle.Web
 E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Glviangle.WebApp.pdb
 E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Glviangle.WebApp.genruntimeconfig.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\bin\Debug\netcoreapp3.1\appsettings.Production.json
+E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\bin\Debug\netcoreapp3.1\html\.prettierrc.json
+E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\bin\Debug\netcoreapp3.1\html\package-lock.json
+E:\PROJECT_DOAN\Glviangle\Glviangle.WebApp\bin\Debug\netcoreapp3.1\html\package.json
