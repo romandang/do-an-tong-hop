@@ -4,14 +4,16 @@ using Glviangle.Data.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Glviangle.Data.Migrations
 {
     [DbContext(typeof(GlviangleDBContext))]
-    partial class GlviangleDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210419081412_add-category")]
+    partial class addcategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

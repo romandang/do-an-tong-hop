@@ -1,7 +1,6 @@
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.BackendApi.deps.json
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.BackendApi.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.BackendApi.pdb
-E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.csprojAssemblyReference.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.AssemblyInfoInputs.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.AssemblyInfo.cs
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.csproj.CoreCompileInputs.cache
