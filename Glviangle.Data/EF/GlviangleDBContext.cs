@@ -2,6 +2,7 @@
 using Glviangle.Data.Configurations.Admin;
 using Glviangle.Data.EF.Entities;
 using Glviangle.Data.Entities.Admin;
+using Glviangle.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Glviangle.Data.EF
             modelBuilder.ApplyConfiguration(new SampleConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryChildConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.Seed();
         }
 
         public DbSet<Sample> Samples { get; set; }

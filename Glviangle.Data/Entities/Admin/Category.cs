@@ -6,7 +6,7 @@ namespace Glviangle.Data.Entities.Admin
 {
     public class Category
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         public string CategoryName { get; set; }
         public string Alias { get; set; }
         public List<ChildCategory> listChildCategory { get; set; }
