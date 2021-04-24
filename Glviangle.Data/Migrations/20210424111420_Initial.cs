@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Glviangle.Data.Migrations
 {
-    public partial class addcategory : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,7 +10,7 @@ namespace Glviangle.Data.Migrations
                 name: "Category",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     CategoryName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Alias = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
@@ -21,12 +20,25 @@ namespace Glviangle.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Sample",
+                columns: table => new
+                {
+                    Key = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Value = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sample", x => x.Key);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CategoryChild",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     CategoryName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CategoryParentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CategoryParentId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     Alias = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
@@ -37,8 +49,18 @@ namespace Glviangle.Data.Migrations
                         column: x => x.CategoryParentId,
                         principalTable: "Category",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Category",
+                columns: new[] { "Id", "Alias", "CategoryName" },
+                values: new object[] { "Cate01", "dien-thoai", "Điện thoại" });
+
+            migrationBuilder.InsertData(
+                table: "CategoryChild",
+                columns: new[] { "Id", "Alias", "CategoryName", "CategoryParentId" },
+                values: new object[] { "CCate01", "dien-thoai-samsung", "Điện thoại Samsung", "Cate01" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_CategoryChild_CategoryParentId",
@@ -50,6 +72,9 @@ namespace Glviangle.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "CategoryChild");
+
+            migrationBuilder.DropTable(
+                name: "Sample");
 
             migrationBuilder.DropTable(
                 name: "Category");

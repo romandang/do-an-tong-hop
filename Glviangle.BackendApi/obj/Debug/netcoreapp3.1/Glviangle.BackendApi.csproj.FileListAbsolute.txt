@@ -6,3 +6,4 @@ E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.csproj.CoreCompileInputs.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.pdb
+E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.csprojAssemblyReference.cache
