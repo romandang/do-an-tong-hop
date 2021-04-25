@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hPSGNc3O/CF0eEYn5qNJtrRwb7b5wQiCZfKWjqXQ/Y0Cv4Og/G5FmTsx6Hp/X6MhgTZ5ZVD+X88HnvtmYWjVDw==",
+  "dgSpecHash": "TftxK0q6v8gkgNP4tq+xPIzfxgZI9SmnTLuyZCNTv/lXSFWOnnmp1fTdIxe3OKLiMGSXNhKH3E30L/I9b3GXzg==",
   "success": true,
   "projectFilePath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.BackendApi\\Glviangle.BackendApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\swashbuckle.aspnetcore\\5.0.0\\swashbuckle.aspnetcore.5.0.0.nupkg.sha512",
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.0.0\\swashbuckle.aspnetcore.swagger.5.0.0.nupkg.sha512",
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.0.0\\swashbuckle.aspnetcore.swaggergen.5.0.0.nupkg.sha512",
+    "C:\\Users\\KHOADANG\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.0.0\\swashbuckle.aspnetcore.swaggerui.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
