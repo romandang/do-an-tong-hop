@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Glviangle.WebApp.Models;
+using Glviangle.Helper;
 
 namespace Glviangle.WebApp.Controllers
 {
@@ -18,9 +19,12 @@ namespace Glviangle.WebApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var pageName = "homepage";
+            var model = RenderHelper.ReadHtmlString(pageName);
+            await Task.CompletedTask;
+            return View(model);
         }
 
         public IActionResult Privacy()
