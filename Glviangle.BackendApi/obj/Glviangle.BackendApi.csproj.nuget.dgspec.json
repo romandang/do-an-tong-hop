@@ -4,6 +4,62 @@
     "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.BackendApi\\Glviangle.BackendApi.csproj": {}
   },
   "projects": {
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj",
+        "projectName": "Glviangle.Application",
+        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj",
+        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {
+                "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.BackendApi\\Glviangle.BackendApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +68,152 @@
         "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.BackendApi\\Glviangle.BackendApi.csproj",
         "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
         "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.BackendApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj": {
+                "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj"
+              },
+              "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj": {
+                "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj",
+        "projectName": "Glviangle.Data",
+        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj",
+        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj",
+        "projectName": "Glviangle.Core",
+        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj",
+        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +243,87 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj",
+        "projectName": "Glviangle.WebApp",
+        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj",
+        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj": {
+                "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.7, )"
             }
           },
           "imports": [

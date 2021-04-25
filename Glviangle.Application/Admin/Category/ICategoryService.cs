@@ -13,6 +13,6 @@ namespace Glviangle.Application.Admin
 
         public Task<Category> DeleteCategory(int categoryId);
 
-        public Task ShowCategory();
+        public Task<List<Category>> ShowCategory();
     }
 }

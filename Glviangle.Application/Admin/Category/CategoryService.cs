@@ -1,4 +1,6 @@
-﻿using Glviangle.Data.Entities.Admin;
+﻿using Glviangle.Data.EF;
+using Glviangle.Data.Entities.Admin;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +10,11 @@ namespace Glviangle.Application.Admin
 {
     public class CategoryService : ICategoryService
     {
+        private readonly GlviangleDBContext _context;
+        public CategoryService(GlviangleDBContext context)
+        {
+            _context = context;
+        }
         public Task AddCategory(Category category)
         {
 
@@ -19,9 +26,10 @@ namespace Glviangle.Application.Admin
             throw new NotImplementedException();
         }
 
-        public Task ShowCategory()
+        public async Task<List<Category>> ShowCategory()
         {
-            throw new NotImplementedException();
+            var data = await _context.Categories.ToListAsync();
+            return data;
         }
 
         public Task<Category> UpdateCategory(Category category)

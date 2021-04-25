@@ -1,0 +1,9 @@
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.deps.json
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.pdb
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.AssemblyInfoInputs.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.AssemblyInfo.cs
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.csproj.CoreCompileInputs.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.pdb
+E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.csprojAssemblyReference.cache
