@@ -1,0 +1,100 @@
+module.exports = [
+  {
+    param: "referrals/active",
+    method: "GET",
+    callback: function (req, res) {
+      setTimeout(() => {
+        res.json([
+          {
+            title: "Referred on",
+            timeLine: "14 Aug 2020",
+            name: "Annie Tan",
+            email: "annie1@gmail.com",
+            referralCode: "VU3ARE",
+            status: "active",
+          },
+          {
+            title: "Referred on",
+            timeLine: "14 Aug 2020",
+            name: "Annie Tan",
+            email: "annie2@gmail.com",
+            referralCode: "VU3ARE",
+            status: "active",
+          },
+          {
+            title: "Referred on",
+            timeLine: "14 Aug 2020",
+            name: "Annie Tan",
+            email: "annie3@gmail.com",
+            referralCode: "VU3ARE",
+            status: "active",
+          },
+        ]);
+      }, 2000);
+    },
+  },
+  {
+    param: "referrals/expired",
+    method: "GET",
+    callback: function (req, res) {
+      res.json([
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "expired",
+        },
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "expired",
+        },
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "expired",
+        },
+      ]);
+    },
+  },
+  {
+    param: "referrals/success",
+    method: "GET",
+    callback: function (req, res) {
+      res.json([
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "success",
+        },
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "success",
+        },
+        {
+          title: "Referred on",
+          timeLine: "14 Aug 2020",
+          name: "Annie Tan",
+          email: "annie@gmail.com",
+          referralCode: "",
+          status: "success",
+        },
+      ]);
+    },
+  },
+];

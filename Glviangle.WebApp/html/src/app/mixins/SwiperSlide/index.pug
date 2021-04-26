@@ -1,0 +1,34 @@
+mixin swiper-slide(datas)
+  each data in datas
+    .swiper-slide(class=data.className)
+      div(class=`${data.className}__img`)
+        img.hide-md(src=require(`../../../assets/images/${data.imageMobile}`), alt="imageDesktop")
+        img.hide-sm(src=require(`../../../assets/images/${data.imageDesktop}`), alt="imageMobile")
+        if data.imagebtn
+          div.mixin-slide__btn(class=`${data.className}__btn`)
+            a(
+              href=data.link
+              onclick=data.onClick
+              data-omni-type="microsite"
+              data-omni=data.dataOmni
+              data-scroll=data.dataScroll)
+              img(src=require(`../../../assets/images/${data.imagebtn}`), alt="CTA") 
+
+
+
+mixin swiper(datas)
+  - let n = 1
+  - let n2 = 0
+
+  .swiper-container(class=`${datas.class_name}`)
+    .swiper-wrapper
+      while n <= datas.item_number
+        .swiper-slide(class=`slide-${n2++}`)
+          img.w-100(src=require(`../../../assets/images/${datas.folder}/${data.name}-${n++}.${datas.type}`) alt=data.name)
+    if datas.pagination
+      .swiper-pagination
+    if datas.control
+      .swiper-button-next
+      .swiper-button-prev
+      .swiper__button.swiper__button--next
+      .swiper__button.swiper__button--prev

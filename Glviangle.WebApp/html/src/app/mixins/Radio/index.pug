@@ -1,0 +1,21 @@
+
+mixin radio(inputs)
+  each input in inputs
+    .ant-radio-group.ant-radio-group-outline
+      label.ant-radio-wrapper(class=input.checked ? 'ant-radio-wrapper-checked' : '')
+        span.ant-radio(class=input.checked ? 'ant-radio-checked' : '')
+          input.ant-radio-input(type="radio" value=input.data checked=input.checked ? true : false)
+          span.ant-radio-inner
+        span= input.data
+
+//Example 
+//- +radio([
+//-     {
+//-       checked: true,
+//-       data: 'apple'
+//-     },
+//-     {
+//-       checked: false,
+//-       data: 'banana'
+//-     },
+//- ])

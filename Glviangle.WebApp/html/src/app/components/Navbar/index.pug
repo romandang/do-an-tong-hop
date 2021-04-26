@@ -1,0 +1,52 @@
+- var { routers } = require('../../../router.js');
+- var { navLink } = require('./navLink.js');
+div.navbar
+  div.logo
+    h1
+      a(href='/')
+        img(src='../../../assets/images/samsung-logo.svg' alt="logo samsung")
+  div.gr_toggle
+    div.gr_user
+      span.user_ico
+        a(href=routers.myProfile)
+          img(src='../../../assets/images/icon/ico-user.png' alt="icon user")
+      button.btn_toggle
+        i.far.fa-ellipsis-v
+        //- span.btn_circle
+        //- span.btn_circle
+        //- span.btn_circle
+    div.main_menu
+      ul.menu
+        li.menu_item
+          div.user_info
+            p
+              span(data-user-name).user_welcome Hi, Celia!
+            .active-referrals.js-sticky
+              span(class="sticky_more_info" data-sticky="Active Referrals are the number of referrals you have made but not accepted by your friends yet.") ?
+              a(href=routers.myReferrals)
+                span No. of Active Referrals:&nbsp;
+                span(data-active-refer).active_refer 7/10
+        each val, key in navLink
+          li.menu_item
+            a(href=routers[key])!=val
+
+        //- li.menu_item
+        //-   a(href='/') Home
+        //- li.menu_item
+        //-   a(href=routers.referAFriend) Refer a friend
+        //- li.menu_item
+        //-   a(href=routers.claimYourToken) Claim your token
+        //- li.menu_item
+        //-   a(href=routers.myRewards) My Rewards
+        //- li.menu_item
+        //-   a(href=routers.rewards) Rewards Catalogue
+        //- li.menu_item
+        //-   a(href=routers.myProfile) My Profile
+        //- li.menu_item
+        //-   a(href=routers.referrals) Referral
+        //- li.menu_item
+        //-   a(href=routers.faq) FAQ
+        //- li.menu_item
+        //-   a(href=routers.termsAndConditions) Terms and Conditions
+        //- li.menu_item
+        //-   a(href=routers.aboutTheProgramme) About the program
