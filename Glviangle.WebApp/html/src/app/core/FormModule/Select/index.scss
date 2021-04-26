@@ -1,0 +1,132 @@
+/* custom select */
+.custom-select {
+  font-size: 14px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  select {
+    display: none;
+  }
+  .select-styled {
+    align-items: center;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    transition: 0.4s;
+    user-select: none;
+    &:before,
+    &:after {
+      border-top: 1px solid #555;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: rotate(135deg);
+      transition: 0.4s;
+      width: 12px;
+    }
+    &:after {
+      right: 24px;
+      transform: rotate(-135deg);
+    }
+    &.active {
+      border-radius: 22px 22px 0 0;
+      transition: 0.4s;
+      &:before {
+        transform: rotate(45deg);
+        transition: 0.4s;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        transition: 0.4s;
+      }
+    }
+    &.loading {
+      &::before {
+        top: 12px;
+        right: 20px;
+        border: 1px solid #555;
+        border-bottom: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform: rotate(0);
+        animation: loadingCircle 0.8s linear infinite;
+      }
+      &::after {
+        border: 0;
+      }
+    }
+  }
+  .select-list {
+    background: #f2f2f2;
+    border: 1px solid #d9d9d9;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    box-shadow: 0 1px 2px #cecece;
+    left: 0;
+    max-height: 190px;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 99;
+    li {
+      align-items: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      color: #666;
+      cursor: pointer;
+      display: flex;
+      height: 38px;
+      padding: 5px 20px;
+      user-select: none;
+      &:last-child {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+  .select-list *:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .custom-select {
+    font-size: 13px;
+    height: 38px;
+    .select-styled {
+      border-radius: 19px;
+      height: 38px;
+      padding: 2px 16px;
+      &:before,
+      &:after {
+        right: 12px;
+        width: 10px;
+      }
+      &:after {
+        right: 19px;
+      }
+    }
+    .select-list div {
+      height: 31.6666px;
+    }
+  }
+}
+/* END custom select */

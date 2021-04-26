@@ -1,0 +1,30 @@
+//- normal layout
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    - const configData = require('../../../config.js')
+    if configData.ENV == "prod" || configData.ENV == "stg"
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- Share fb
+    meta(property='og:type' content='article')
+    meta(property='og:title' content='Samsung Referral Portal')
+    meta(property='og:description' content='Samsung Referral Portal')
+    meta(property='og:image' content='')
+    meta(property='og:url' content='')
+    meta(property='og:site_name' content='Samsung')
+    //-
+    title Samsung
+    link(rel="shortcut icon" href="")
+    link(rel="apple-touch-icon" href="")
+    //- link(rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css")
+    //- script(src="https://unpkg.com/swiper/js/swiper.min.js")
+  body
+    #samsung
+      include ../components/loading/index.pug
+      div.wrapper
+        div.wrapper_content
+          include ../components/Navbar/index.pug
+          block content
+        include ../components/footer/index.pug
+    

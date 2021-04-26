@@ -1,0 +1,20 @@
+.navigation{
+  &__logo{}
+  &__nav{
+    &__search{
+      .search{}
+      .language{}
+    }
+    &__menu{
+      ul{
+        li{
+          .menu__child{
+            &__item{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}

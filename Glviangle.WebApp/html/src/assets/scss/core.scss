@@ -1,0 +1,15 @@
+@import "./global/variables";
+@import "./global/mixin";
+@import "./global/font-samsung-cdn";
+@import "./global/common";
+@import "./vender/nprogress";
+@import "./vender/fontawesome";
+
+@import "~aos/src/sass/aos.scss";
+@import "~swiper/src/swiper.scss";
+
+@import "./../../app/core/Card/index.scss";
+@import "./../../app/core/ButtonSprin/index.scss";
+
+@import "./../../app/components/loader";
+// @import "./../../app/components/Navbar/index.scss";
