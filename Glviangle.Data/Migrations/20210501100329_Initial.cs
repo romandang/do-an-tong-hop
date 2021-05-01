@@ -55,7 +55,13 @@ namespace Glviangle.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Category",
                 columns: new[] { "Id", "Alias", "CategoryName" },
-                values: new object[] { "Cate01", "dien-thoai", "Điện thoại" });
+                values: new object[,]
+                {
+                    { "Cate01", "benh-vien", "Bệnh viện" },
+                    { "Cate02", "kham-pha", "Khám phá" },
+                    { "Cate03", "dich-vu", "Dịch vụ" },
+                    { "Cate04", "len-ke-hoach", "Lên kế hoạch" }
+                });
 
             migrationBuilder.InsertData(
                 table: "CategoryChild",

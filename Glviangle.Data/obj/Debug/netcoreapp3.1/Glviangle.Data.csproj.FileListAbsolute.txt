@@ -1,6 +1,5 @@
 E:\PROJECT_DOAN\Glviangle\Glviangle.Data\bin\Debug\netcoreapp3.1\Glviangle.Data.deps.json
 E:\PROJECT_DOAN\Glviangle\Glviangle.Data\bin\Debug\netcoreapp3.1\Glviangle.Data.dll
-E:\PROJECT_DOAN\Glviangle\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.csprojAssemblyReference.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.AssemblyInfoInputs.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.AssemblyInfo.cs
 E:\PROJECT_DOAN\Glviangle\Glviangle.Data\bin\Debug\netcoreapp3.1\Glviangle.Data.runtimeconfig.json
@@ -22,3 +21,4 @@ D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glvian
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.dll
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.pdb
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.genruntimeconfig.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.csprojAssemblyReference.cache

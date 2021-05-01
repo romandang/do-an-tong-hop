@@ -14,8 +14,26 @@ namespace Glviangle.Data.Extensions
                 new Category()
                 {
                     Id = "Cate01",
-                    CategoryName = "Điện thoại",
-                    Alias = "dien-thoai",
+                    CategoryName = "Bệnh viện",
+                    Alias = "benh-vien",
+                },
+                new Category()
+                {
+                    Id = "Cate02",
+                    CategoryName = "Khám phá",
+                    Alias = "kham-pha",
+                },
+                new Category()
+                {
+                    Id = "Cate03",
+                    CategoryName = "Dịch vụ",
+                    Alias = "dich-vu",
+                },
+                new Category()
+                {
+                    Id = "Cate04",
+                    CategoryName = "Lên kế hoạch",
+                    Alias = "len-ke-hoach",
                 }
             );
             modelBuilder.Entity<ChildCategory>().HasData(
