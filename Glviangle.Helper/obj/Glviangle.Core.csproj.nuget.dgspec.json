@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj": {}
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj": {}
   },
   "projects": {
-    "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj": {
+    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj",
+        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj",
         "projectName": "Glviangle.Core",
-        "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj",
-        "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
-        "outputPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\obj\\",
+        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj",
+        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -54,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

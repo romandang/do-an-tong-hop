@@ -1,0 +1,27 @@
+#header
+  .container 
+    .container-left 
+      .container-left-logo
+        .image-wrapper 
+          img(src=require("../../../assets/images/logo.png"), alt="")
+    .container-right
+      .container-right-language 
+        .block-search 
+          a(href="#") 
+            span 
+              i(class="fa fa-search" aria-hidden="true")
+        .block-language 
+          a(href="#")  
+            span EN
+              i(class="fa fa-angle-up" aria-hidden="true")
+
+      .container-right-listmenu 
+        ul
+          script#templateHeader(type="text/x-jstemplate") 
+            li 
+              a(href=`./{{:alias}}`) 
+                span {{:categoryName}}
+                  i(class="fa fa-angle-up" aria-hidden="true")
+
+
+

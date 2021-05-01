@@ -20,6 +20,7 @@ namespace Glviangle.BackendApi
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_MyAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,10 +31,17 @@ namespace Glviangle.BackendApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(
+                (options) =>
+                {
+                    options.AddPolicy(MyAllowSpecificOrigins,
+                        builder =>
+                     builder.WithOrigins("https://localhost:8080"));
+                }
+           );
             services.AddDbContext<GlviangleDBContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("GlviangleDb")));
-
             services.AddControllers();
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddMvc();
@@ -45,11 +53,14 @@ namespace Glviangle.BackendApi
                     Version = "v1"
                 });
             });
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -78,6 +89,10 @@ namespace Glviangle.BackendApi
                     pattern: "api/{controller=Home}/{action=GetAllCategory}/{id?}"
                  );
             });
+
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }

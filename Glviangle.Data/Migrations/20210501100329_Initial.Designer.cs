@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Glviangle.Data.Migrations
 {
     [DbContext(typeof(GlviangleDBContext))]
-    [Migration("20210424111420_Initial")]
+    [Migration("20210501100329_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -17,7 +17,7 @@ namespace Glviangle.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.4")
+                .HasAnnotation("ProductVersion", "5.0.5")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Glviangle.Data.EF.Entities.Sample", b =>
@@ -62,8 +62,26 @@ namespace Glviangle.Data.Migrations
                         new
                         {
                             Id = "Cate01",
-                            Alias = "dien-thoai",
-                            CategoryName = "Điện thoại"
+                            Alias = "benh-vien",
+                            CategoryName = "Bệnh viện"
+                        },
+                        new
+                        {
+                            Id = "Cate02",
+                            Alias = "kham-pha",
+                            CategoryName = "Khám phá"
+                        },
+                        new
+                        {
+                            Id = "Cate03",
+                            Alias = "dich-vu",
+                            CategoryName = "Dịch vụ"
+                        },
+                        new
+                        {
+                            Id = "Cate04",
+                            Alias = "len-ke-hoach",
+                            CategoryName = "Lên kế hoạch"
                         });
                 });
 
