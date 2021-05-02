@@ -6,7 +6,6 @@ E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Cor
 E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.csproj.CoreCompileInputs.cache
 E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.pdb
-E:\PROJECT_DOAN\Glviangle\Glviangle.Helper\obj\Debug\netcoreapp3.1\Glviangle.Core.csprojAssemblyReference.cache
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.deps.json
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.dll
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Helper\bin\Debug\netcoreapp3.1\Glviangle.Core.pdb

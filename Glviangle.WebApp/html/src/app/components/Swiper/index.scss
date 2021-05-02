@@ -3,15 +3,15 @@ body {
   position: relative;
   height: 100%;
 }
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
+p{
   margin: 0;
-  padding: 0;
 }
+@mixin AlignItem($alignItem, $justifyContent){
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
 
 .swiper-container {
   width: 100%;
@@ -22,20 +22,25 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  @include AlignItem(center, center);
+  .wrapper-container{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include AlignItem(center, center);
+  }
+  &-content{
+    .content{
+      &-title{
+        text-transform: capitalize;
+      }
+      &-subtitle{
+        margin: 5% 0;
+      }
+    }
+  }
 }
 
 .swiper-slide img {

@@ -25,6 +25,7 @@
       "Glviangle.BackendApi/1.0.0": {
         "dependencies": {
           "Glviangle.Application": "1.0.0",
+          "Glviangle.ViewModel": "1.0.0",
           "Glviangle.WebApp": "1.0.0",
           "Swashbuckle.AspNetCore": "5.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -1577,7 +1578,8 @@
       },
       "Glviangle.Application/1.0.0": {
         "dependencies": {
-          "Glviangle.Data": "1.0.0"
+          "Glviangle.Data": "1.0.0",
+          "Glviangle.ViewModel": "1.0.0"
         },
         "runtime": {
           "Glviangle.Application.dll": {}
@@ -1605,6 +1607,17 @@
         },
         "compile": {
           "Glviangle.Data.dll": {}
+        }
+      },
+      "Glviangle.ViewModel/1.0.0": {
+        "dependencies": {
+          "Glviangle.Data": "1.0.0"
+        },
+        "runtime": {
+          "Glviangle.ViewModel.dll": {}
+        },
+        "compile": {
+          "Glviangle.ViewModel.dll": {}
         }
       },
       "Glviangle.WebApp/1.0.0": {
@@ -3981,6 +3994,11 @@
       "sha512": ""
     },
     "Glviangle.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Glviangle.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

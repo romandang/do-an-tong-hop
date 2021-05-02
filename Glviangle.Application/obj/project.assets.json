@@ -1586,6 +1586,19 @@
         "runtime": {
           "bin/placeholder/Glviangle.Data.dll": {}
         }
+      },
+      "Glviangle.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Glviangle.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Glviangle.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Glviangle.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -5947,11 +5960,17 @@
       "type": "project",
       "path": "../Glviangle.Data/Glviangle.Data.csproj",
       "msbuildProject": "../Glviangle.Data/Glviangle.Data.csproj"
+    },
+    "Glviangle.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Glviangle.ViewModel/Glviangle.ViewModel.csproj",
+      "msbuildProject": "../Glviangle.ViewModel/Glviangle.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Glviangle.Data >= 1.0.0"
+      "Glviangle.Data >= 1.0.0",
+      "Glviangle.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5982,6 +6001,9 @@
           "projectReferences": {
             "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {
               "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj"
+            },
+            "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj": {
+              "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj"
             }
           }
         }

@@ -1,0 +1,10 @@
+.homepageMAZ{
+  width: 100%;
+  &-container{
+    width: 50%;
+    margin: auto;
+    .description{
+      text-align: center;
+    }
+  }
+}

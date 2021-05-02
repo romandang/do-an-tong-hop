@@ -1,4 +1,5 @@
 ﻿using Glviangle.Data.Entities.Admin;
+using Glviangle.Data.Entities.Client;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,40 @@ namespace Glviangle.Data.Extensions
                     CategoryParentId = "Cate01"
                 }
             );
+
+            modelBuilder.Entity<Promotion>().HasData(
+                new Promotion()
+                {
+                    Id = "PRO01",
+                    DateFrom = DateTime.Parse("2021-04-01"),
+                    DateTo = DateTime.Now,
+                    Description = "Alo 1234",
+                    Place = "Bệnh viện Bình Dân",
+                    Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
+                    Title = "Lung Cancer Screening Package"
+                },
+                new Promotion()
+                {
+                    Id = "PRO02",
+                    DateFrom = DateTime.Parse("2021-04-01"),
+                    DateTo = DateTime.Now,
+                    Description = "Alo 1234",
+                    Place = "Bệnh viện Bình Dân",
+                    Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
+                    Title = "Lung Cancer Screening Package"
+                },
+                new Promotion()
+                {
+                    Id = "PRO03",
+                    DateFrom = DateTime.Parse("2021-04-01"),
+                    DateTo = DateTime.Now,
+                    Description = "Alo 1234",
+                    Place = "Bệnh viện Bình Dân",
+                    Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
+                    Title = "Lung Cancer Screening Package"
+                }
+                );
+
         }
     }
 }
