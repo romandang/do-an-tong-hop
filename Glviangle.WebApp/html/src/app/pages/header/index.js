@@ -30,11 +30,9 @@ export class Header{
 
   _render(data){
     const container = this.data.container;
-    console.log(data);
     data.data.forEach((item) => {
       container.index = container.find('[item-number]').length++;
       const template = this.data.template.render(item);
-      console.log(item);
       $(template).
         appendTo(container);
     });

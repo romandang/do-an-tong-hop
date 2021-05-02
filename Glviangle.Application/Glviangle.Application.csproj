@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Glviangle.Data\Glviangle.Data.csproj" />
+    <ProjectReference Include="..\Glviangle.ViewModel\Glviangle.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

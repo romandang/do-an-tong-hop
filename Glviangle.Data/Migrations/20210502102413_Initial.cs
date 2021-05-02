@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Glviangle.Data.Migrations
 {
@@ -17,6 +18,23 @@ namespace Glviangle.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Category", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Promotion",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Thumbnail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateFrom = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateTo = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Place = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Promotion", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -64,6 +82,16 @@ namespace Glviangle.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Promotion",
+                columns: new[] { "Id", "DateFrom", "DateTo", "Description", "Place", "Thumbnail", "Title" },
+                values: new object[,]
+                {
+                    { "PRO01", new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2021, 5, 2, 17, 24, 12, 727, DateTimeKind.Local).AddTicks(8809), "Alo 1234", "Bệnh viện Bình Dân", "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1", "Lung Cancer Screening Package" },
+                    { "PRO02", new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2021, 5, 2, 17, 24, 12, 728, DateTimeKind.Local).AddTicks(8810), "Alo 1234", "Bệnh viện Bình Dân", "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1", "Lung Cancer Screening Package" },
+                    { "PRO03", new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2021, 5, 2, 17, 24, 12, 728, DateTimeKind.Local).AddTicks(8810), "Alo 1234", "Bệnh viện Bình Dân", "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1", "Lung Cancer Screening Package" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "CategoryChild",
                 columns: new[] { "Id", "Alias", "CategoryName", "CategoryParentId" },
                 values: new object[] { "CCate01", "dien-thoai-samsung", "Điện thoại Samsung", "Cate01" });
@@ -78,6 +106,9 @@ namespace Glviangle.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "CategoryChild");
+
+            migrationBuilder.DropTable(
+                name: "Promotion");
 
             migrationBuilder.DropTable(
                 name: "Sample");

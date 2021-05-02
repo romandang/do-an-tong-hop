@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Glviangle.Application.Admin;
+using Glviangle.Application.Client;
 using Glviangle.Data.EF;
 using Glviangle.WebApp.Data;
 using Microsoft.AspNetCore.Builder;
@@ -44,6 +45,7 @@ namespace Glviangle.BackendApi
                     Configuration.GetConnectionString("GlviangleDb")));
             services.AddControllers();
             services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IPromotionService, PromotionService>();
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {

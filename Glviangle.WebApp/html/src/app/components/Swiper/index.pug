@@ -1,0 +1,16 @@
+include ../Button/index.pug
+mixin slide(containerClass, slides)
+  .swiper-container(class=`${containerClass}`)
+    .swiper-wrapper 
+      each item in slides 
+        .swiper-slide
+          img.hide-sm(src=`${item.imagePC}`, alt=`${(!item.alt) ? 'default' : (item.alt)}`)
+          img.hide-md(src=`${item.imageMB}`, alt=`${(!item.alt) ? 'default' : (item.alt)}`)
+          .wrapper-container
+            .swiper-slide-content 
+              .content-title
+                h2!= item.title 
+              .content-subtitle 
+                p!= item.subtitle
+              +button({content: 'tìm hiểu thêm', iconClass: '', nobg: false})     
+    .swiper-pagination

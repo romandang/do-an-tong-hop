@@ -3,11 +3,22 @@ import "../../common";
 import $ from "jquery";
 import { Header } from "../header";
 import { Footer } from "../footer";
+import { SwiperSlide } from "../../components/Swiper";
+import { HomepagePromotion } from "./homepagePromotion";
+// init component only
+import "./homepageMS";
+import "./homepageMAZ";
+import "./homepagePromotion";
+
+
 
 $(document).ready(function(){
-
   const header = new Header();
   const footer = new Footer();
+  const swiper = new SwiperSlide({container: ".homepage-swiper"});
+  const homepagePromotion = new HomepagePromotion();
+  swiper.init();
   header._init();
   footer._init();
+  homepagePromotion._init();
 });

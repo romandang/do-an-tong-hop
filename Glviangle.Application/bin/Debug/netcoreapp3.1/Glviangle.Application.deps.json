@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "Glviangle.Application/1.0.0": {
         "dependencies": {
-          "Glviangle.Data": "1.0.0"
+          "Glviangle.Data": "1.0.0",
+          "Glviangle.ViewModel": "1.0.0"
         },
         "runtime": {
           "Glviangle.Application.dll": {}
@@ -1145,6 +1146,14 @@
         "runtime": {
           "Glviangle.Data.dll": {}
         }
+      },
+      "Glviangle.ViewModel/1.0.0": {
+        "dependencies": {
+          "Glviangle.Data": "1.0.0"
+        },
+        "runtime": {
+          "Glviangle.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -1862,6 +1871,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Glviangle.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Glviangle.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

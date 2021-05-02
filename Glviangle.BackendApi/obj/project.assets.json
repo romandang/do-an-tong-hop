@@ -1690,7 +1690,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Glviangle.Data": "1.0.0"
+          "Glviangle.Data": "1.0.0",
+          "Glviangle.ViewModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Glviangle.Application.dll": {}
@@ -1722,6 +1723,19 @@
         },
         "runtime": {
           "bin/placeholder/Glviangle.Data.dll": {}
+        }
+      },
+      "Glviangle.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Glviangle.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Glviangle.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Glviangle.ViewModel.dll": {}
         }
       },
       "Glviangle.WebApp/1.0.0": {
@@ -6192,6 +6206,11 @@
       "path": "../Glviangle.Data/Glviangle.Data.csproj",
       "msbuildProject": "../Glviangle.Data/Glviangle.Data.csproj"
     },
+    "Glviangle.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Glviangle.ViewModel/Glviangle.ViewModel.csproj",
+      "msbuildProject": "../Glviangle.ViewModel/Glviangle.ViewModel.csproj"
+    },
     "Glviangle.WebApp/1.0.0": {
       "type": "project",
       "path": "../Glviangle.WebApp/Glviangle.WebApp.csproj",
@@ -6201,6 +6220,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Glviangle.Application >= 1.0.0",
+      "Glviangle.ViewModel >= 1.0.0",
       "Glviangle.WebApp >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.0.0"
     ]
@@ -6233,6 +6253,9 @@
           "projectReferences": {
             "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj": {
               "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj"
+            },
+            "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj": {
+              "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj"
             },
             "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj": {
               "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.WebApp\\Glviangle.WebApp.csproj"

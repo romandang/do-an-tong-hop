@@ -1,0 +1,24 @@
+include ../../../components/Button/index.pug
+include ../../../components/Promotion/index.pug
+section.homepagePromotion.bg-grey
+  .homepagePromotion-container
+    .title.--title 
+      h2 sự kiện & khuyến mãi sắp tới
+  .homepagePromotion-listPromotion
+    .block-promotion 
+      .block-promotion-container
+        script#templateListPromotion(type="x-jstemplate") 
+          +promotion([
+            {
+              imagePC: '{{:thumbnail}}',
+              imageMB: '{{:thumbnail}}',
+              title: '{{:title}}',
+              dateFrom: '{{:dateFrom}}',
+              dateTo: '{{:dateTo}}',
+              place: '{{:place}}',
+              description: '{{:description}}'
+            }
+          ])
+      .block-promotion-button
+        +button({content: "view all", iconClass: 'fa-angle-right', nobg: false})
+

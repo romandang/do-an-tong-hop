@@ -99,7 +99,6 @@ E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Swashbuck
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.csproj.CoreCompileInputs.cache
-E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.MvcApplicationPartsAssemblyInfo.cs
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.MvcApplicationPartsAssemblyInfo.cache
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Production.json
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -198,3 +197,6 @@ D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.dll
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.pdb
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.genruntimeconfig.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.MvcApplicationPartsAssemblyInfo.cs
+E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.pdb

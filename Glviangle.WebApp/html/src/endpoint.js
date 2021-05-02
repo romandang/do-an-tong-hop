@@ -5,6 +5,9 @@ export const endpoint = {
    */
   Category:{
     GetAllCategory: "/home/GetAllCategory"
-  } 
+  },
+  Promotion: {
+    GetAllPromotion: "/promotion/GetAllPromotion"
+  }
   
 };
