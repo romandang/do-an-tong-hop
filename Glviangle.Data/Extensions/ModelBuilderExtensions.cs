@@ -50,27 +50,7 @@ namespace Glviangle.Data.Extensions
             modelBuilder.Entity<Promotion>().HasData(
                 new Promotion()
                 {
-                    Id = "PRO01",
-                    DateFrom = DateTime.Parse("2021-04-01"),
-                    DateTo = DateTime.Now,
-                    Description = "Alo 1234",
-                    Place = "Bệnh viện Bình Dân",
-                    Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
-                    Title = "Lung Cancer Screening Package"
-                },
-                new Promotion()
-                {
-                    Id = "PRO02",
-                    DateFrom = DateTime.Parse("2021-04-01"),
-                    DateTo = DateTime.Now,
-                    Description = "Alo 1234",
-                    Place = "Bệnh viện Bình Dân",
-                    Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
-                    Title = "Lung Cancer Screening Package"
-                },
-                new Promotion()
-                {
-                    Id = "PRO03",
+                    Id = "PRO04",
                     DateFrom = DateTime.Parse("2021-04-01"),
                     DateTo = DateTime.Now,
                     Description = "Alo 1234",

@@ -21,3 +21,4 @@ D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glvian
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.dll
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.pdb
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.genruntimeconfig.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.Data\obj\Debug\netcoreapp3.1\Glviangle.Data.csprojAssemblyReference.cache
