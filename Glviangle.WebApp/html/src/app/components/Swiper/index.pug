@@ -12,5 +12,6 @@ mixin slide(containerClass, slides)
                 h2!= item.title 
               .content-subtitle 
                 p!= item.subtitle
-              +button({content: 'tìm hiểu thêm', iconClass: '', nobg: false})     
+              if !item.isNoBtn
+                +button({content: 'tìm hiểu thêm', iconClass: '', nobg: false})     
     .swiper-pagination

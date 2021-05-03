@@ -1,3 +1,5 @@
+include ../../../components/Swiper/index.pug
+include ../../../components/Button/index.pug
 section.homepageMS
   .homepageMS-container
     .title.--title 
@@ -6,3 +8,32 @@ section.homepageMS
         | chuyên đề y tế
     .description.--description 
       p Gleneagles luôn cố gắng mang đến cho bạn dịch vụ chăm sóc y tế tốt nhất, bao gồm nhiều chuyên khoa và thủ thuật y tế đa dạng và phong phú. Khám phá các dịch vụ y tế và lâm sàng mà chúng tôi có sẵn. Tim mạch Ung thư Phẫu thuật chỉnh hình & chấn thương Phẫu thuật tổng quát Khoa nhi Khoa tiêu hóa
+  .homepageMS-slider-container
+    +slide('homepageMS-slider', [
+      {
+        imagePC: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        imageMB: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        alt: 'Glviangle',
+        title: 'General Surgery',
+        subtitle: '',
+        isNoBtn: true
+      },
+      {
+        imagePC: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        imageMB: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        alt: 'Glviangle',
+        title: 'General Surgery',
+        subtitle: '',
+        isNoBtn: true
+      },
+      {
+        imagePC: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        imageMB: 'https://gleneagles.azureedge.net/images/default-source/specialisations/general-surgery-4988616448ba838b462924eb38bb23b5849531504.jpg?sfvrsn=1ba50a25_12',
+        alt: 'Glviangle',
+        title: 'General Surgery',
+        subtitle: '',
+        isNoBtn: true
+      },
+    ])
+  .homepageMS-button-container 
+    +button({content: 'view all specialties', nobg: false})
