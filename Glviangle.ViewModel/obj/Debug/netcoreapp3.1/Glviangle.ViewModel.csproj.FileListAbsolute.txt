@@ -1,0 +1,12 @@
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.deps.json
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.pdb
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\bin\Debug\netcoreapp3.1\Glviangle.Data.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\bin\Debug\netcoreapp3.1\Glviangle.Data.pdb
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.csprojAssemblyReference.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.AssemblyInfoInputs.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.AssemblyInfo.cs
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.csproj.CoreCompileInputs.cache
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.csproj.CopyComplete
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.dll
+E:\PROJECT_DOAN\Glviangle\Glviangle.ViewModel\obj\Debug\netcoreapp3.1\Glviangle.ViewModel.pdb

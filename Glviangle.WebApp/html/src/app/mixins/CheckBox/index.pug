@@ -1,0 +1,31 @@
+mixin checkbox(datas)
+  each data in datas
+      label
+        input(
+          type='checkbox' 
+          id=data.id
+          value=data.value
+          name=data.name
+          checked=data.checked
+          )
+        span(class=data.class)!=data.content
+
+//Example 
+//- +checkbox([
+//-   {
+//-     id:"apple",
+//-     value:"Apple",
+//-     name:"Apple",
+//-     checked: true,
+//-     content: "Apple"
+//-   },
+//-   {
+//-     id:"apple-2",
+//-     value:"Banana",
+//-     name:"Banana",
+//-     checked: true,
+//-     content: "Banana"
+//-   },
+//- ])
+
+  

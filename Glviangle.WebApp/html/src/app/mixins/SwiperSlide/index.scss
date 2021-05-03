@@ -1,0 +1,129 @@
+$img-size: (
+  "dk-1700": 100%,
+  "dk-1600": 75%,
+  "dk-1400": 70%,
+  "dk": 50%,
+  "md": 70%,
+  "m": 60%,
+  "s": 60%,
+  "sm": 65%,
+  "x": 60%,
+);
+
+$location-btn: (
+  "dk-1700": 67%,
+  "dk-1600": 65%,
+  "dk-1400": 75%,
+  "dk": 75%,
+  "md": 50%,
+  "m": 75%,
+  "s": 75%,
+  "sm": 75%,
+  "x": 75%,
+);
+
+$break-points: (
+  "dk-1600": 1600px,
+  "dk-1400": 1400px,
+  "dk": 1200px,
+  "md": 991px,
+  "m": 700px,
+  "s": 600px,
+  "sm": 380px,
+  "x": 360px,
+);
+
+.mixin-slide {
+  &__box {
+    position: relative;
+    width: 100%;
+  }
+
+  &__btn {
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: 10%;
+    text-align: center;
+    left: map-get($location-btn, "dk-1700");
+    transition: 1s;
+
+    &:hover {
+      transform: translate(-50%, 10px);
+    }
+
+    @media (max-width: 991px) {
+      bottom: 5%;
+      left: map-get($location-btn, "md");
+    }
+
+    img {
+      width: auto;
+      margin: 0 auto;
+      max-width: map-get($img-size, "dk-1700");
+
+      @each $name, $glyph in $break-points {
+        @media (max-width: $glyph) {
+          max-width: map-get($img-size, $name);
+        }
+      }
+    }
+  }
+}
+
+.images-libary,
+.thumbs-libary {
+  position: relative;
+  overflow: hidden;
+}
+.thumbs-libary {
+  flex-basis: 100px;
+  margin-top: 10px;
+  .swiper-slide {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .swiper-slide-thumb-active,
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}
+.images-libary {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: url("//images.samsung.com/is/image/samsung/p5/vn/showcase/icon/slider-btn.png")
+      50% / cover no-repeat;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    transition: all 0.2s;
+    outline: none;
+    @media (min-width: 600px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+    @media (min-width: 991px) {
+      &:hover {
+        transform: translateY(-50%) scale(1.5);
+      }
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+    @media (min-width: 991px) {
+      &:hover {
+        transform: translateY(-50%) scale(1.5) rotate(180deg);
+      }
+    }
+  }
+  .w-100 {
+    width: 100% !important;
+  }
+}

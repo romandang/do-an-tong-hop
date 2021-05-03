@@ -1,0 +1,21 @@
+.homepagePromotion{
+  width: 100%;
+  &-container{
+    width: 50%;
+    margin: auto;
+    .description{
+      text-align: center;
+    }
+  }
+  .block{
+    &-promotion{
+      &-item{
+        box-shadow: 1px 1px 8px grey;
+        border-radius: 15px;
+      }
+      &-button{
+        padding: 5% 0 2% 0;
+      }
+    }
+  }
+}

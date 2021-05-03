@@ -1,0 +1,89 @@
+@import "../../../assets/scss/global/variables";
+@import "../../../assets/scss/global/mixin";
+
+$font-checkbox: (
+  "xs": 12px,
+  "x": 14px,
+  "sm": 16px,
+  "s": 18px,
+  "m": 18px,
+  "md": 15px,
+  "dk": 20px,
+);
+
+$break-points: (
+  "x": 360px,
+  "sm": 380px,
+  "s": 600px,
+  "m": 700px,
+  "md": 991px,
+  "dk": 1200px,
+);
+
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -999em;
+
+  + span {
+    color: $black-100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+    font-size: map-get($font-checkbox, "xs");
+
+    @each $name, $glyph in $break-points {
+      @media (min-width: $glyph) {
+        font-size: map-get($font-checkbox, $name);
+      }
+    }
+    @media (max-width: map-get($break-points, "s" )) {
+      display: block;
+      text-align: left;
+      a {
+        margin-left: 22px;
+      }
+    }
+  }
+
+  + span:before {
+    content: "";
+    display: inline-block;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+    border: 1px solid $black-100;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    font: bold 14px/13px Verdana, sans-serif;
+    color: $black-100;
+  }
+
+  @media (min-width: 600px) {
+    + span:before {
+      width: 25px;
+      height: 25px;
+      font: bold 23px/22px Verdana, sans-serif;
+    }
+  }
+
+  @media (min-width: 991px) {
+    + span:before {
+      width: 20px;
+      height: 20px;
+      font: bold 16px/18px Verdana, sans-serif;
+    }
+  }
+
+  &:checked + span:before {
+    content: "✓";
+    border-color: $black-100;
+    text-align: center;
+  }
+}

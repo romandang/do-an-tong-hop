@@ -1,0 +1,1 @@
+export const routers = {"footer":"/footer.html", "header":"/header.html", "homepage":"/homepage.html"};

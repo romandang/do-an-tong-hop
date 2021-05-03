@@ -1519,6 +1519,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Glviangle.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Glviangle.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Glviangle.Core.dll": {}
+        }
       }
     }
   },
@@ -5685,10 +5695,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Glviangle.Core/1.0.0": {
+      "type": "project",
+      "path": "../Glviangle.Helper/Glviangle.Core.csproj",
+      "msbuildProject": "../Glviangle.Helper/Glviangle.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Glviangle.Core >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.7",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.7",
@@ -5721,7 +5737,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj": {
+              "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Helper\\Glviangle.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

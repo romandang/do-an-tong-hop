@@ -3,18 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.Application", "Glviangle.Application\Glviangle.Application.csproj", "{86BF71D9-29BA-45A9-8EB8-8299659F111F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glviangle.Application", "Glviangle.Application\Glviangle.Application.csproj", "{86BF71D9-29BA-45A9-8EB8-8299659F111F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.Data", "Glviangle.Data\Glviangle.Data.csproj", "{16F2E6F8-9AEE-4FE1-8B1D-8AB5400AA757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glviangle.Data", "Glviangle.Data\Glviangle.Data.csproj", "{16F2E6F8-9AEE-4FE1-8B1D-8AB5400AA757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.BackendApi", "Glviangle.BackendApi\Glviangle.BackendApi.csproj", "{8C02A79F-B36C-4CE5-89B1-F81F52EF4072}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.WebApp", "Glviangle.WebApp\Glviangle.WebApp.csproj", "{CF784501-A8E8-4151-92B0-BF865539DF85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glviangle.WebApp", "Glviangle.WebApp\Glviangle.WebApp.csproj", "{CF784501-A8E8-4151-92B0-BF865539DF85}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC501CF3-FBAD-4711-B2C6-A30B882D1277}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.MD = Readme.MD
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glviangle.Core", "Glviangle.Helper\Glviangle.Core.csproj", "{3591047A-EBCE-4276-99BF-1F9E1BA33A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.ViewModel", "Glviangle.ViewModel\Glviangle.ViewModel.csproj", "{C0CB9B3A-1CD0-493C-9766-ED10EDF2910E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glviangle.BackendApi", "Glviangle.BackendApi\Glviangle.BackendApi.csproj", "{66AA6136-600C-4B4B-AC31-1C6594BEDC2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +34,22 @@ Global
 		{16F2E6F8-9AEE-4FE1-8B1D-8AB5400AA757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F2E6F8-9AEE-4FE1-8B1D-8AB5400AA757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16F2E6F8-9AEE-4FE1-8B1D-8AB5400AA757}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C02A79F-B36C-4CE5-89B1-F81F52EF4072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C02A79F-B36C-4CE5-89B1-F81F52EF4072}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C02A79F-B36C-4CE5-89B1-F81F52EF4072}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C02A79F-B36C-4CE5-89B1-F81F52EF4072}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF784501-A8E8-4151-92B0-BF865539DF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF784501-A8E8-4151-92B0-BF865539DF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF784501-A8E8-4151-92B0-BF865539DF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF784501-A8E8-4151-92B0-BF865539DF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3591047A-EBCE-4276-99BF-1F9E1BA33A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3591047A-EBCE-4276-99BF-1F9E1BA33A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3591047A-EBCE-4276-99BF-1F9E1BA33A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3591047A-EBCE-4276-99BF-1F9E1BA33A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0CB9B3A-1CD0-493C-9766-ED10EDF2910E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CB9B3A-1CD0-493C-9766-ED10EDF2910E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CB9B3A-1CD0-493C-9766-ED10EDF2910E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CB9B3A-1CD0-493C-9766-ED10EDF2910E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AA6136-600C-4B4B-AC31-1C6594BEDC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AA6136-600C-4B4B-AC31-1C6594BEDC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AA6136-600C-4B4B-AC31-1C6594BEDC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AA6136-600C-4B4B-AC31-1C6594BEDC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

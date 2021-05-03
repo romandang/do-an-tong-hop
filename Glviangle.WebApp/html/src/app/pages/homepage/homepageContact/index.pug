@@ -1,0 +1,35 @@
+include ../../../components/Map/index
+section.contact 
+  .contact-header 
+    .contact-header-logo 
+      .contact-header-logo-wrapper 
+        img(src="https://www.gleneagles.com.my/images/default-source/site-essentials/logo_footer1.svg?sfvrsn=fae64d72_2", alt="")
+    .contact-header-menu 
+      ul 
+        li 
+          a(href="") about us 
+        li 
+          a(href="") careers
+        li 
+          a(href="") contact us
+        li 
+          a(href="") sitemap 
+  .contact-information 
+    .contact-information-title
+      h4 contact information
+    .contact-information-list 
+      ul 
+        li 
+          a(href="")
+            span Hospital1
+        li 
+          a(href="")
+            span Hospital1
+        li 
+          a(href="")
+            span Hospital1
+        li 
+          a(href="")
+            span Hospital1 
+  .contact-location
+    +map({class: "contact-map"})
