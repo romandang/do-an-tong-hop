@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {}
+    "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj": {}
   },
   "projects": {
-    "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {
+    "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj",
+        "projectUniqueName": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj",
         "projectName": "Glviangle.Data",
-        "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj",
-        "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
-        "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\obj\\",
+        "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj",
+        "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -78,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

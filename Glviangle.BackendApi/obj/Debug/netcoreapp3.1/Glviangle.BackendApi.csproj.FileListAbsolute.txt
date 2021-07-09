@@ -200,3 +200,8 @@ D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\obj\Debug\netcoreapp3.1\Glviangle.BackendApi.MvcApplicationPartsAssemblyInfo.cs
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.dll
 E:\PROJECT_DOAN\Glviangle\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.pdb
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\html\.prettierrc.json
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\html\package-lock.json
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\html\package.json
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.dll
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.BackendApi\bin\Debug\netcoreapp3.1\Glviangle.ViewModel.pdb

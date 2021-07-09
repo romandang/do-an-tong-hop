@@ -156,29 +156,9 @@ namespace Glviangle.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "PRO01",
+                            Id = "PRO04",
                             DateFrom = new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateTo = new DateTime(2021, 5, 2, 17, 24, 12, 727, DateTimeKind.Local).AddTicks(8809),
-                            Description = "Alo 1234",
-                            Place = "Bệnh viện Bình Dân",
-                            Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
-                            Title = "Lung Cancer Screening Package"
-                        },
-                        new
-                        {
-                            Id = "PRO02",
-                            DateFrom = new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateTo = new DateTime(2021, 5, 2, 17, 24, 12, 728, DateTimeKind.Local).AddTicks(8810),
-                            Description = "Alo 1234",
-                            Place = "Bệnh viện Bình Dân",
-                            Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",
-                            Title = "Lung Cancer Screening Package"
-                        },
-                        new
-                        {
-                            Id = "PRO03",
-                            DateFrom = new DateTime(2021, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateTo = new DateTime(2021, 5, 2, 17, 24, 12, 728, DateTimeKind.Local).AddTicks(8810),
+                            DateTo = new DateTime(2021, 6, 19, 12, 11, 21, 746, DateTimeKind.Local).AddTicks(1291),
                             Description = "Alo 1234",
                             Place = "Bệnh viện Bình Dân",
                             Thumbnail = "https://gleneagles.azureedge.net/images/default-source/community/lung-cancer_event-banner-01-(1).tmb-event.jpg?sfvrsn=73d05bfe_1",

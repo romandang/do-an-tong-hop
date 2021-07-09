@@ -9,8 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Glviangle.Application\Glviangle.Application.csproj" />
-    <ProjectReference Include="..\Glviangle.ViewModel\Glviangle.ViewModel.csproj" />
     <ProjectReference Include="..\Glviangle.WebApp\Glviangle.WebApp.csproj" />
   </ItemGroup>
 
