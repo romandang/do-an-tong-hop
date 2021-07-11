@@ -1,0 +1,70 @@
+﻿@model Glviangle.WebApp.Models.DoctorModel.Doctor
+@{ 
+	var doctor = Model.Data;
+	var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
+}
+	<section class="sec-padding doctor-profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img src="@imagePath/@doctor.avatar[0]" alt="">
+				</div>
+				<div class="col-md-7 single-team-member">
+					<h3>@doctor.name</h3>
+					<span>@doctor.specialist</span>
+					<div class="awards-wrapper clearfix">
+						<div class="single-award">
+							<div class="inner">
+								<i class="flaticon-cup"></i>									
+								<p><span class="block">Best</span> Doctor Awards</p>
+								<span class="number">
+									05
+								</span>
+							</div>
+						</div>
+						<div class="single-award">
+							<div class="inner">
+								<i class="flaticon-medical-1"></i>									
+								<p><span class="block">Best</span> Doctor Awards</p>
+								<span class="number">
+									05
+								</span>
+							</div>
+						</div>
+						<div class="single-award">
+							<div class="inner">
+								<i class="fa fa-map-marker"></i>									
+								<p><span class="block">Best</span> Doctor Awards</p>
+								<span class="number">
+									05
+								</span>
+							</div>
+						</div>
+						<div class="single-award">
+							<div class="inner">
+								<i class="fa fa-graduation-cap"></i>									
+								<p><span class="block">Best</span> Doctor Awards</p>
+								<span class="number">
+									05
+								</span>
+							</div>
+						</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod it tincidunt ut laoreet commodo consequat. Duis autem vel eum iriure tation dolore lorem ipsue magna aliquam erat the dummy text use for sample text</p>
+					<ul class="infos">
+						<li><span>Speciality</span> <span>&nbsp;&nbsp;@doctor.profile[0].speciality</span></li>
+						<li><span>Degrees</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@doctor.profile[0].degrees</span></li>
+						<li><span>Experience</span> <span>@doctor.profile[0].experience</span></li>
+						<li><span>Training</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;@doctor.profile[0].training</span></li>
+						<li><span>Degrees</span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@doctor.profile[0].workingtime</span></li>
+					</ul>
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>

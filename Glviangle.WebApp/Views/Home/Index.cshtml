@@ -1,4 +1,4 @@
-﻿@model BlogVM
+﻿@model Glviangle.WebApp.Models.BlogModel.BlogVM;
 
 @{
     ViewData["Title"] = "View";
@@ -806,7 +806,7 @@
                                 <div class="box">
                                     <div class="content">
                                         <ul>
-                                            <li><a href="blog-details.html"><i class="fa fa-link"></i></a></li>
+                                            <li><a href="/blogs/@blog.Id"><i class="fa fa-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -824,7 +824,7 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <a href="/blog-detail/@blog.Id"><h3>Lates blog post with image</h3></a>
+                                <a href="/blogs/@blog.Id"><h3>Lates blog post with image</h3></a>
                                 <p>@blog.Data.description</p>
                                 <span>Tag: <a href="blog-details.html">doctor, medicine</a></span>
                             </div>

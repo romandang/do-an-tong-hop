@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Glviangle.WebApp.Models
+namespace Glviangle.WebApp.Models.BlogModel
 {
     public sealed class BlogData
     {
@@ -24,5 +24,10 @@ namespace Glviangle.WebApp.Models
 
         [JsonConverter(typeof(InvariantConverter))]
         public Detail[] detail { get; set; }
+
+        [JsonConverter(typeof(InvariantConverter))]
+        public string[] banner { get; set; }
+
+
     }
 }

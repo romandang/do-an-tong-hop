@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj",
         "projectName": "Glviangle.Core",
         "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\Glviangle.Core.csproj",
-        "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\RomanDang\\.nuget\\packages\\",
         "outputPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RomanDang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

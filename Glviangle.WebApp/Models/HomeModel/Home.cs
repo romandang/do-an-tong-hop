@@ -5,18 +5,11 @@
 //  All rights reserved. Licensed under the MIT license.
 // ==========================================================================
 
-using System.Collections.Generic;
-using Glviangle.WebApp.Entities.Home;
-using Newtonsoft.Json;
 using Squidex.ClientLibrary;
 
-namespace Glviangle.WebApp.Models
+namespace Glviangle.WebApp.Models.HomeModel
 {
-    public sealed class HomeData
+    public sealed class Home : Content<HomeData>
     {
-
-        [JsonConverter(typeof(InvariantConverter))]
-        public HomeSlider[] homeSlider { get; set; }
-
     }
 }

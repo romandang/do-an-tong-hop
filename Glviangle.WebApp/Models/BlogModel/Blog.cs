@@ -7,9 +7,9 @@
 
 using Squidex.ClientLibrary;
 
-namespace Glviangle.WebApp.Models
+namespace Glviangle.WebApp.Models.BlogModel
 {
-    public sealed class Home : Content<HomeData>
+    public sealed class Blog : Content<BlogData>
     {
     }
 }

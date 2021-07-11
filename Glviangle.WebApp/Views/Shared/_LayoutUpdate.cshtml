@@ -1,8 +1,19 @@
-﻿<!DOCTYPE html>
+﻿@using Glviangle.WebApp.Models.PageModel
+
+@{ 
+    var initView = ViewData["initView"] as View;
+    var header = initView.header.Data;
+    var footer = initView.footer.Data;
+    var blogs = initView.blogs;
+    var services = initView.services;
+    var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home One || Medi Plus || Medical and Dental Services HTML 5 Template</title>
+    <title>@initView.title</title>
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,20 +25,38 @@
 </head>
 
 <body>
+    @if(!initView.isHomepage)
+            {
+                <section class="inner-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 sec-title colored text-center">
+					<h2>@initView.title</h2>
+					<ul class="breadcumb">
+						<li><a href="index.html">Home</a></li>
+						<li><i class="fa fa-angle-right"></i></li>
+						<li><span>@initView.title</span></li>
+					</ul>
+					<span class="decor"><span class="inner"></span></span>
+				</div>
+			</div>
+		</div>
+	</section>
+            }
     <section class="top-bar">
         <div class="container">
 
             <div class="left-text pull-left">
-                <p><span>Opening Hours :</span> Monday to Saturday - 8am to 5pm</p>
+                <p><span>Opening Hours :</span> @header.workingtime</p>
             </div> <!-- /.left-text -->
 
             <div class="social-icons pull-right">
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="@header.social.facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="@header.social.twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="@header.social.google"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="@header.social.likeln"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="@header.social.pinterest"><i class="fa fa-pinterest"></i></a></li>
                 </ul>
             </div> <!-- /.social-icons -->
         </div>
@@ -37,7 +66,7 @@
         <div class="container">
             <div class="logo pull-left">
                 <a href="index.html">
-                    <img src="~/img/resources/logo.png" alt="Awesome Image" />
+                    <img src="@imagePath/@header.logo[0]" alt="Awesome Image" />
                 </a>
             </div>
             <div class="header-right-info pull-right clearfix">
@@ -49,7 +78,7 @@
                     </div>
                     <div class="content">
                         <h3>EMAIL</h3>
-                        <p>companyname@mail.com</p>
+                        <p>@header.email</p>
                     </div>
                 </div>
                 <div class="single-header-info">
@@ -60,11 +89,11 @@
                     </div>
                     <div class="content">
                         <h3>Call Now</h3>
-                        <p><b>(732) 803-010-03</b></p>
+                        <p><b>@header.phone</b></p>
                     </div>
                 </div>
                 <div class="single-header-info">
-                    <a href="appointment.html" class="thm-btn">Appointment</a>
+                    <a href="/booking" class="thm-btn">Appointment</a>
                 </div>
             </div>
         </div>
@@ -77,15 +106,15 @@
                 <div class="nav-header">
                     <ul>
                         <li class="dropdown">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                             <ul class="submenu">
                                 <li><a href="index.html">Home One</a></li>
                                 <li><a href="index2.html">Home Two</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="/about-us">About</a></li>
                         <li class="dropdown">
-                            <a href="services.html">Services</a>
+                            <a href="/services">Services</a>
                             <ul class="submenu">
                                 <li><a href="service-details.html">Primary Halth Care</a></li>
                                 <li><a href="service-details.html">Heart Treatment</a></li>
@@ -97,7 +126,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="doctors.html">Doctors</a>
+                            <a href="/doctors">Doctors</a>
                             <ul class="submenu">
                                 <li><a href="doctor-profile.html">Doctors Profile</a></li>
                             </ul>
@@ -110,7 +139,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="blog.html">Blog</a>
+                            <a href="/blogs">Blog</a>
                             <ul class="submenu">
                                 <li><a href="blog-details.html">Blog Details</a></li>
                             </ul>
@@ -148,26 +177,27 @@
         </div>
     </section>
 
+    
     <footer class="footer sec-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-widget about-widget">
                         <a href="#">
-                            <img src="~/img/resources/footer-logo.png" alt="Awesome Image" />
+                            <img src="@imagePath/@footer.logo[0]" alt="Awesome Image" />
                         </a>
-                        <p>Lorem ipsum dolor sit amet, eu me evert laboramus, iudico </p>
+                        <p>@footer.description </p>
                         <ul class="contact">
-                            <li><i class="fa fa-map-marker"></i> <span>60 Grant Ave. Carteret NJ 0708</span></li>
-                            <li><i class="fa fa-phone"></i> <span>(880) 1723801729</span></li>
-                            <li><i class="fa fa-envelope-o"></i> <span>example@gmail.com</span></li>
+                            <li><i class="fa fa-map-marker"></i> <span>@footer.address</span></li>
+                            <li><i class="fa fa-phone"></i> <span>@footer.phone</span></li>
+                            <li><i class="fa fa-envelope-o"></i> <span>@footer.email</span></li>
                         </ul>
                         <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="@footer.social.facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="@footer.social.twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="@footer.social.google"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="@footer.social.pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="@footer.social.likeln"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -175,13 +205,11 @@
                     <div class="footer-widget quick-links">
                         <h3 class="title">Services</h3>
                         <ul>
-                            <li><a href="service-details.html">Dental</a></li>
-                            <li><a href="service-details.html">Cadilogy</a></li>
-                            <li><a href="service-details.html">Neurology</a></li>
-                            <li><a href="service-details.html">Bond Bindin</a></li>
-                            <li><a href="service-details.html">X-Ray</a></li>
-                            <li><a href="service-details.html">Pregency</a></li>
-                            <li><a href="service-details.html">Heart Dieases</a></li>
+                            @foreach(var service in services)
+                            {
+                                <li><a href="/services/@service.Id">@service.Data.title</a></li>
+                            }
+                            
                         </ul>
                     </div>
                 </div>
@@ -189,27 +217,16 @@
                     <div class="footer-widget latest-post">
                         <h3 class="title">Latest News</h3>
                         <ul>
+                            @foreach(var blog in blogs)
+                            {
                             <li>
                                 <span class="border"></span>
                                 <div class="content">
-                                    <a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
-                                    <span>July 2, 2014</span>
+                                    <a href="blogs/@blog.Id">@blog.Data.title</a>
+                                    <span>@Html.Raw(@blog.Data.dateCreate)</span>
                                 </div>
                             </li>
-                            <li>
-                                <span class="border"></span>
-                                <div class="content">
-                                    <a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
-                                    <span>July 2, 2014</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="border"></span>
-                                <div class="content">
-                                    <a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
-                                    <span>July 2, 2014</span>
-                                </div>
-                            </li>
+                            }
                         </ul>
                     </div>
                 </div>
@@ -229,11 +246,6 @@
     </footer>
 
 
-    <section class="footer-bottom">
-        <div class="container text-center">
-            <p>Theme Created By <a href="#">TEMPLATE PATH</a> with love</p>
-        </div>
-    </section>
 
 
     <!-- main jQuery -->

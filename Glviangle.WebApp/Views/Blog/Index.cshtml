@@ -1,241 +1,149 @@
-﻿@model Blog
-@{
-    ViewData["Title"] = "View";
-    var blog = Model.Data;
+﻿@model Glviangle.WebApp.Models.BlogModel.BlogVM
+@{ 
+	var blogs = Model.listBlog;
+	var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
 }
+	<section class="blog-home sec-padding blog-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 pull-left">
 
-<section class="blog-home sec-padding blog-page blog-details">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 pull-left">
-                <div class="single-blog-post">
-                    <div class="img-box">
-                        <img src="~/img/blog-page/4.jpg" alt="">
-                    </div>
-                    <div class="content-box">
-                        <div class="date-box">
-                            <div class="inner">
-                                <div class="date">
-                                    <b>24</b>
-                                    apr
-                                </div>
-                                <div class="comment">
-                                    <i class="flaticon-interface-1"></i> 8
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <a href="#"><h3>Lates blog post with image</h3></a>
-                            @Html.Raw(blog.detail.FirstOrDefault().content)<br>
-                            <p> Iisque quaeque propriae has no. Modo blandit tincidunt ne eos, diam periculis disputationi usu cu. Ea eos suscipit expetendis. Vix ea quot modus, id novum vocibus pro. Nec autem ullum albucius no, vel ne tritani omnesque omittantur. Pro fierent hendrerit assueverit et, per quod luptatum comprehensam in.</p> <br>
-                            <p> No consulatu comprehensam nam. Ferri dolore sententiae te eum, nibh dictas definitiones mea ei. Nec cu augue dicunt, est id verear labitur necessitatibus. Salutandi quaerendum ex nec.</p> <br>
-                            <p> Cu quo audire apeirian. Dolore necessitatibus sea id, nihil mandamus an ius, per recusabo interesset reprehendunt ea. In vix autem vituperatoribus, mei sint ipsum dolorem ex, quodsi vitupera</p>
-                            <div class="bottom-box clearfix">
-                                <span class="pull-left">Tag: <a href="#">doctor, medicine</a></span>
-                                <ul class="pull-right share">
-                                    <li><span>Share: </span></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="admin-info">
-                    <div class="img-box">
-                        <div class="inner-box">
-                            <img src="~/img/blog-page/admin.jpg" alt="Awesome Image" />
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Rashed kabir</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="comment-box">
-                    <div class="title">
-                        <h2>2 Comments</h2>
-                    </div>
-                    <div class="single-comment-box">
-                        <div class="img-box">
-                            <div class="inner-box">
-                                <img src="~/img/blog-page/comment1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h3>Jhon Chena</h3>
-                            <div class="meta-box clearfix">
-                                <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
-                                <a href="#" class="reply pull-right">Reply</a>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
-
-                        </div>
-                    </div>
-                    <div class="single-comment-box">
-                        <div class="img-box">
-                            <div class="inner-box">
-                                <img src="~/img/blog-page/comment1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h3>Jhon Chena</h3>
-                            <div class="meta-box clearfix">
-                                <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
-                                <a href="#" class="reply pull-right">Reply</a>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
-
-                        </div>
-                    </div>
-                    <div class="single-comment-box">
-                        <div class="img-box">
-                            <div class="inner-box">
-                                <img src="~/img/blog-page/comment1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h3>Jhon Chena</h3>
-                            <div class="meta-box clearfix">
-                                <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
-                                <a href="#" class="reply pull-right">Reply</a>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
-
-                        </div>
-                    </div>
-                    <div class="single-comment-box">
-                        <div class="img-box">
-                            <div class="inner-box">
-                                <img src="~/img/blog-page/comment1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h3>Jhon Chena</h3>
-                            <div class="meta-box clearfix">
-                                <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
-                                <a href="#" class="reply pull-right">Reply</a>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="comment-form contact-content">
-                    <h2>Leave a Comment</h2>
-                    <form action="inc/sendemail.php" class="contact-form row" id="contact-page-contact-form">
-                        <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="text" name="email" placeholder="Email">
-                            <input type="text" name="phone" placeholder="Phone">
-                            <button type="submit">Send</button>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-            <div class="col-md-4 pull-right">
-                <div class="side-bar-widget">
-                    <div class="single-sidebar-widget search">
-                        <form action="#">
-                            <input type="text" placeholder="Search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <div class="single-sidebar-widget category">
-                        <h3 class="title">Catagories</h3>
-                        <ul>
-                            <li><a href="#">Heart</a></li>
-                            <li><a href="#">Cardiology</a></li>
-                            <li><a href="#">Patient</a></li>
-                            <li><a href="#">Dental</a></li>
-                            <li><a href="#">Leaser</a></li>
-                        </ul>
-                    </div>
-                    <div class="single-sidebar-widget popular-post">
-                        <h3 class="title">Popular Posts</h3>
-                        <ul>
-                            <li>
-                                <div class="img-box">
-                                    <div class="inner-box">
-                                        <img src="~/img/blog-page/s1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="content-box">
-                                    <a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
-                                    <span>17 jun, 2015</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-box">
-                                    <div class="inner-box">
-                                        <img src="~/img/blog-page/s2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="content-box">
-                                    <a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
-                                    <span>17 jun, 2015</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-box">
-                                    <div class="inner-box">
-                                        <img src="~/img/blog-page/s3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="content-box">
-                                    <a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
-                                    <span>17 jun, 2015</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-box">
-                                    <div class="inner-box">
-                                        <img src="~/img/blog-page/s4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="content-box">
-                                    <a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
-                                    <span>17 jun, 2015</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="single-sidebar-widget archive">
-                        <h3 class="title">Archive</h3>
-                        <ul>
-                            <li><a href="#">October 2015</a></li>
-                            <li><a href="#">November 2015</a></li>
-                            <li><a href="#">December 2015</a></li>
-                            <li><a href="#">January 2016</a></li>
-                            <li><a href="#">February 2016</a></li>
-                        </ul>
-                    </div>
-                    <div class="single-sidebar-widget tags">
-                        <h3 class="title">Keywords</h3>
-                        <ul>
-                            <li><a href="#">Heart</a></li>
-                            <li><a href="#">Cardiology</a></li>
-                            <li><a href="#">Patient</a></li>
-                            <li><a href="#">Dental</a></li>
-                            <li><a href="#">Leaser</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+					@foreach(var blog in blogs)
+					{
+						<div class="single-blog-post">
+						<div class="img-box">
+							<img src="@imagePath/@blog.Data.banner[0]" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="/blogs/@blog.Id"><i class="fa fa-link"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box">
+							<div class="date-box">
+								<div class="inner">
+									<div class="date">
+										@Html.Raw(blog.Data.dateCreate)
+									</div>
+									<div class="comment">
+										<i class="flaticon-interface-1"></i> 8
+									</div>
+								</div>
+							</div>
+							<div class="content">
+								<a href="/blogs/@blog.Id"><h3>@blog.Data.title</h3></a>
+								<p>@blog.Data.description</p>
+								<span>Tag: <a href="blog-details.html">doctor, medicine</a></span>
+							</div>
+						</div>
+					</div>
+					}
+					
+					<ul class="page-navigation">
+						<li><a href=""><i class="fa fa-angle-left"></i></a></li>
+						<li><span>1</span></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href=""><i class="fa fa-angle-right"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 pull-right">
+					<div class="side-bar-widget">
+						<div class="single-sidebar-widget search">
+							<form action="#">
+								<input type="text" placeholder="Search">
+								<button type="submit"><i class="fa fa-search"></i></button>
+							</form>
+						</div>
+						<div class="single-sidebar-widget category">
+							<h3 class="title">Catagories</h3>
+							<ul>
+								<li><a href="#">Heart</a></li>
+								<li><a href="#">Cardiology</a></li>
+								<li><a href="#">Patient</a></li>
+								<li><a href="#">Dental</a></li>
+								<li><a href="#">Leaser</a></li>
+							</ul>
+						</div>
+						<div class="single-sidebar-widget popular-post">
+							<h3 class="title">Popular Posts</h3>
+							<ul>
+								<li>
+									<div class="img-box">
+										<div class="inner-box">
+											<img src="img/blog-page/s1.jpg" alt="">
+										</div>
+									</div>
+									<div class="content-box">
+										<a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
+										<span>17 jun, 2015</span>
+									</div>
+								</li>
+								<li>
+									<div class="img-box">
+										<div class="inner-box">
+											<img src="img/blog-page/s2.jpg" alt="">
+										</div>
+									</div>
+									<div class="content-box">
+										<a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
+										<span>17 jun, 2015</span>
+									</div>
+								</li>
+								<li>
+									<div class="img-box">
+										<div class="inner-box">
+											<img src="img/blog-page/s3.jpg" alt="">
+										</div>
+									</div>
+									<div class="content-box">
+										<a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
+										<span>17 jun, 2015</span>
+									</div>
+								</li>
+								<li>
+									<div class="img-box">
+										<div class="inner-box">
+											<img src="img/blog-page/s4.jpg" alt="">
+										</div>
+									</div>
+									<div class="content-box">
+										<a href="#"><h4>Lorem Ipsum is simply dumm textand somthing more here</h4></a>
+										<span>17 jun, 2015</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="single-sidebar-widget archive">
+							<h3 class="title">Archive</h3>
+							<ul>
+								<li><a href="#">October 2015</a></li>
+								<li><a href="#">November 2015</a></li>
+								<li><a href="#">December 2015</a></li>
+								<li><a href="#">January 2016</a></li>
+								<li><a href="#">February 2016</a></li>
+							</ul>
+						</div>						
+						<div class="single-sidebar-widget tags">
+							<h3 class="title">Keywords</h3>
+							<ul>
+								<li><a href="#">Heart</a></li>
+								<li><a href="#">Cardiology</a></li>
+								<li><a href="#">Patient</a></li>
+								<li><a href="#">Dental</a></li>
+								<li><a href="#">Leaser</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

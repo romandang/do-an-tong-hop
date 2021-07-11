@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Glviangle.WebApp.Models.HomeModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Glviangle.WebApp.Models
+namespace Glviangle.WebApp.Models.BlogModel
 {
     public class BlogVM
     {
