@@ -1,0 +1,920 @@
+export const hospitalData = {
+  "help": "Search a datastore table. :param resource_id: id or alias of the data that is going to be selected.",
+  "success": true,
+  "result": {
+    "fields": [
+      { "id": "TenCoSo", "type": "text" },
+      { "id": "SoGiayPhep", "type": "text" },
+      { "id": "DiaChi", "type": "text" },
+      { "id": "NgayCap", "type": "text" },
+      { "id": "TinhTrang", "type": "text" },
+      { "id": "TenHinhThuc", "type": "text" },
+      { "id": "SoCCHN_NDD", "type": "text" }
+    ],
+    "resource_id": ["8b8d167a-9505-4ba7-a76d-3063dd81768e"],
+    "limit": 200,
+    "total": 7559,
+    "records": [
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m \u0111a khoa thu\u1ed9c C\u00f4ng ty C\u1ed5 ph\u1ea7n Euro Stemcell",
+        "SoGiayPhep": "04211/SYT-GPH\u0110",
+        "DiaChi": "SI-09 Khu ph\u1ed1 Garden Court 2, Ph\u01b0\u1eddng T\u00e2n Phong, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-10-15 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m \u0111a khoa",
+        "SoCCHN_NDD": "000013/BL-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t thu\u1ed9c C\u00f4ng ty TNHH Ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe E.X.M",
+        "SoGiayPhep": "03516/SYT-GPH\u0110",
+        "DiaChi": "L\u00f4 MD6, Khu A Khu \u0111\u00f4 th\u1ecb m\u1edbi Nam th\u00e0nh ph\u1ed1, Nguy\u1ec5n L\u01b0\u01a1ng B\u1eb1ng, Ph\u01b0\u1eddng T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-10-20 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000017/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "C\u00f4ng ty TNHH American Eye Center",
+        "SoGiayPhep": "00002/SYT-GPH\u0110",
+        "DiaChi": "Ph\u00f2ng 509 & 510, T\u00f2a nh\u00e0 Crescent Plaza, l\u00f4 CR4-1, s\u1ed1 105 T\u00f4n D\u1eadt Ti\u00ean (\u0110\u00f4 th\u1ecb Ph\u00fa M\u1ef9 H\u01b0ng), P.T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP.H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2012-08-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoCCHN_NDD": "000018/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoGiayPhep": "01696/SYT-GPH\u0110",
+        "DiaChi": "51 Nguy\u1ec5n Duy Trinh, Ph\u01b0\u1eddng B\u00ecnh Tr\u01b0ng T\u00e2y, Qu\u1eadn 2, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-25 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoCCHN_NDD": "000019/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa",
+        "SoGiayPhep": "00289/SYT-GPH\u0110",
+        "DiaChi": "51 \u0110\u01b0\u1eddng 284 Cao L\u1ed7, Ph\u01b0\u1eddng 4, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-08-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000025/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai m\u0169i h\u1ecdng",
+        "SoGiayPhep": "03025/SYT-GPH\u0110",
+        "DiaChi": "019 L\u00f4 C2 Chung c\u01b0 P6 - T\u00e2n V\u0129nh, Ph\u01b0\u1eddng 6, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-06-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoCCHN_NDD": "000030/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00888/SYT-GPH\u0110",
+        "DiaChi": "322C Hu\u1ef3nh V\u0103n B\u00e1nh, Ph\u01b0\u1eddng 11, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-12-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000042/GL-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoGiayPhep": "02780/SYT-GPH\u0110",
+        "DiaChi": "182/2A H\u1ed3 V\u0103n Hu\u00ea, Ph\u01b0\u1eddng 9, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-05-15 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoCCHN_NDD": "000049/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "01276/SYT-GPH\u0110",
+        "DiaChi": "46 Nguy\u1ec5n Th\u1ecb T\u00fa, KP1, Ph\u01b0\u1eddng B\u00ecnh H\u01b0ng H\u00f2a B , Qu\u1eadn B\u00ecnh T\u00e2n, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-11 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000058/\u0110L-CCHN"
+      },
+      {
+        "TenCoSo": "None",
+        "SoGiayPhep": "02321/SYT-GPH\u0110",
+        "DiaChi": "601/4A Ca\u0301ch Ma\u0323ng Tha\u0301ng 8, Ph\u01b0\u1eddng 15, Qu\u1eadn 10, TP.H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-21 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoCCHN_NDD": "000048/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00223/SYT-GPH\u0110",
+        "DiaChi": "30 L\u00fd Ch\u00ednh Th\u1eafng, Ph\u01b0\u1eddng 8, Qu\u1eadn 3, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-08-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000057/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "B\u1ec7nh vi\u1ec7n Nh\u00e2n d\u00e2n 115",
+        "SoGiayPhep": "01357/SYT-GPH\u0110",
+        "DiaChi": "527 S\u01b0 V\u1ea1n H\u1ea1nh, Ph\u01b0\u1eddng 12, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-01-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "B\u1ec7nh vi\u1ec7n \u0111a khoa",
+        "SoCCHN_NDD": "000068/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoGiayPhep": "02868/SYT-GPH\u0110",
+        "DiaChi": "249 Tr\u1ea7n Quang Kh\u1ea3i, Ph\u01b0\u1eddng T\u00e2n \u0110\u1ecbnh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-05-30 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoCCHN_NDD": "000077/\u0110NA-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoGiayPhep": "00057/SYT-GPH\u0110",
+        "DiaChi": "68/282A Tr\u1ea7n Quang Kh\u1ea3i, Ph\u01b0\u1eddng T\u00e2n \u0110\u1ecbnh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-04-10 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoCCHN_NDD": "0000778/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "04604/SYT-GPH\u0110",
+        "DiaChi": "39 S\u01b0 V\u1ea1n H\u1ea1nh, Ph\u01b0\u1eddng 3, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-06-15 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000101/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoGiayPhep": "04776/SYT-GPH\u0110",
+        "DiaChi": "229 Nh\u1eadt T\u1ea3o, Ph\u01b0\u1eddng 8, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-08-20 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoCCHN_NDD": "000070/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoGiayPhep": "01087/SYT-GPH\u0110",
+        "DiaChi": "121 Tr\u01b0\u1eddng Chinh, Ph\u01b0\u1eddng 12, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-12-16 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoCCHN_NDD": "000075/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "03372/SYT-GPH\u0110",
+        "DiaChi": "239+241 Th\u1ed1ng Nh\u1ea5t, Ph\u01b0\u1eddng 11, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-08-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000081/\u0110NAI-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t ",
+        "SoGiayPhep": "04002/SYT-GPH\u0110",
+        "DiaChi": "511 L\u00ea \u0110\u1ee9c Th\u1ecd, Ph\u01b0\u1eddng 16, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-11-11 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000093/L\u0110-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p ",
+        "SoGiayPhep": "01836/SYT-GPH\u0110",
+        "DiaChi": "30/2 Hu\u1ef3nh T\u1ea5n Ph\u00e1t, KP5, T.T.Nh\u00e0 B\u00e8 , Huy\u1ec7n Nh\u00e0 B\u00e8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-03-18 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000006/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "PH\u00d2NG KH\u00c1M CHUY\u00caN KHOA S\u1ea2N PH\u1ee4 KHOA ",
+        "SoGiayPhep": "02258/SYT-GPH\u0110",
+        "DiaChi": "76 \u0110\u01b0\u1eddng 46, KP 4, Ph\u01b0\u1eddng B\u00ecnh Tr\u01b0ng \u0110\u00f4ng, Qu\u1eadn 2, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-21 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000009/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "00515/SYT-GPH\u0110",
+        "DiaChi": "78C12 Ph\u1ea1m Ng\u0169 L\u00e3o, Ph\u01b0\u1eddng 3, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-10-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000011/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoGiayPhep": "01695/HCM-GPH\u0110",
+        "DiaChi": "9BC Tr\u1ea7n Qu\u00fd C\u00e1p, Ph\u01b0\u1eddng 12, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2017-09-21 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000012/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoGiayPhep": "04212/SYT-GPH\u0110",
+        "DiaChi": "To\u00e0n b\u1ed9 t\u1ea7ng tr\u1ec7t, l\u1eedng, l\u1ea7u 2, l\u1ea7u 4-5, s\u1ed1 69-69A \u0110\u01b0\u1eddng 3- 2, Ph\u01b0\u1eddng 11, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-01-12 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoCCHN_NDD": "0001017/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "04275/SYT-GPH\u0110",
+        "DiaChi": "13 \u0110\u1ed1ng \u0110a, Ph\u01b0\u1eddng 2, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-02-10 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000106/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00750/SYT-GPH\u0110",
+        "DiaChi": "631 L\u1ea1c Long Qu\u00e2n, Ph\u01b0\u1eddng 10, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000111/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i th\u1ea7n kinh",
+        "SoGiayPhep": "01402/SYT-GPH\u0110",
+        "DiaChi": "21U C\u01b0 x\u00e1 Ph\u00fa L\u00e2m D, Ph\u01b0\u1eddng 10, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-11 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i th\u1ea7n kinh",
+        "SoCCHN_NDD": "000095/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoGiayPhep": "02390/SYT-GPH\u0110",
+        "DiaChi": "78 D\u01b0\u01a1ng \u0110\u00ecnh Ngh\u1ec7, Ph\u01b0\u1eddng 8, Qu\u1eadn 11, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoCCHN_NDD": "000097/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoGiayPhep": "03169/SYT-GPH\u0110",
+        "DiaChi": "2/6F Nguy\u1ec5n Th\u1ecb S\u00f3c, \u1ea4p H\u01b0ng L\u00e2n, X\u00e3 B\u00e0 \u0110i\u1ec3m , Huy\u1ec7n H\u00f3c M\u00f4n, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-07-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoCCHN_NDD": "0000980/TNI-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoGiayPhep": "00077/SYT-GPH\u0110",
+        "DiaChi": "3093 Ph\u1ea1m Th\u1ebf Hi\u1ec3n, Ph\u01b0\u1eddng 7, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-04-26 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000116/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "01050/SYT-GPH\u0110",
+        "DiaChi": "25/8 L\u00ea V\u0103n Th\u1ecd, Ph\u01b0\u1eddng 8, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-12-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000043/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00053/SYT-GPH\u0110",
+        "DiaChi": "151Bis Tr\u1ea7n Quang Kh\u1ea3i, Ph\u01b0\u1eddng T\u00e2n \u0110\u1ecbnh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-03-14 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000045/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "04488/SYT-GPH\u0110",
+        "DiaChi": "15 Tr\u1ea7n Tr\u1ecdng Cung, Khu ph\u1ed1 1, Ph\u01b0\u1eddng T\u00e2n Thu\u1eadn \u0110\u00f4ng, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-05-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "0000456/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "PH\u00d2NG KH\u00c1M CHUY\u00caN KHOA R\u0102NG H\u00c0M M\u1eb6T ",
+        "SoGiayPhep": "04726/HCM-GPH\u0110",
+        "DiaChi": "92 \u0110\u1eb7ng Nguy\u00ean C\u1ea9n, Ph\u01b0\u1eddng 13, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2017-04-26 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000124/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng ch\u1ea9n tr\u1ecb Y h\u1ecdc c\u1ed5 truy\u1ec1n ( thu\u1ed9c C\u00f4ng ty c\u1ed5 ph\u1ea7n D\u1ecbch v\u1ee5 kh\u00e1ch s\u1ea1n Sa Vi)",
+        "SoGiayPhep": "03976",
+        "DiaChi": "274 C\u1ed9ng H\u00f2a, Ph\u01b0\u1eddng 13, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-11-14 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoCCHN_NDD": "000126/BTH-CCHN"
+      },
+      {
+        "TenCoSo": "C\u01a1 s\u1edf d\u1ecbch v\u1ee5 l\u00e0m r\u0103ng gi\u1ea3",
+        "SoGiayPhep": "03288/SYT-GPH\u0110",
+        "DiaChi": "206 V\u1ea1n Ki\u1ebfp, Ph\u01b0\u1eddng 3, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-08-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "C\u01a1 s\u1edf d\u1ecbch v\u1ee5 l\u00e0m r\u0103ng gi\u1ea3",
+        "SoCCHN_NDD": "0001408/TG-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00596/SYT-GPH\u0110",
+        "DiaChi": "369 L\u00ea H\u1ed3ng Phong, Ph\u01b0\u1eddng 2, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-05 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000150/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p ",
+        "SoGiayPhep": "00690/SYT-GPH\u0110",
+        "DiaChi": "55 Ph\u1ea1m V\u0103n Ch\u00ed, Ph\u01b0\u1eddng 1, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-25 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000117/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00754/SYT-GPH\u0110",
+        "DiaChi": "S\u1ed1 150/26B Nguy\u1ec5n Tr\u00e3i, Ph\u01b0\u1eddng B\u1ebfn Th\u00e0nh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000120/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "03410/SYT-GPH\u0110",
+        "DiaChi": "491/19 Nguy\u1ec5n \u0110\u00ecnh Chi\u1ec3u, Ph\u01b0\u1eddng 2, Qu\u1eadn 3, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-09-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "0001284/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa ",
+        "SoGiayPhep": "02065/SYT-GPH\u0110",
+        "DiaChi": "273 \u0110\u01b0\u1eddng s\u1ed1 29, Khu ph\u1ed1 1, Ph\u01b0\u1eddng B\u00ecnh Tr\u1ecb \u0110\u00f4ng B , Qu\u1eadn B\u00ecnh T\u00e2n, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000132/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "04710/SYT-GPH\u0110",
+        "DiaChi": "297/37 L\u00ea \u0110\u1ee9c Th\u1ecd, Ph\u01b0\u1eddng 17, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-08-04 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000056/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "01292/SYT-GPH\u0110",
+        "DiaChi": "502/11/29 Hu\u1ef3nh T\u1ea5n Ph\u00e1t, Ph\u01b0\u1eddng B\u00ecnh Thu\u1eadn, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-12 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000061/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "01457/SYT-GPH\u0110",
+        "DiaChi": "61/11 L\u00ea V\u0103n L\u01b0\u01a1ng, Ph\u01b0\u1eddng T\u00e2n Ki\u1ec3ng, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-12 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000071/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "04956/SYT-GPH\u0110",
+        "DiaChi": "145 Ph\u1ea1m H\u1eefu L\u1ea7u, KP2, Ph\u01b0\u1eddng Ph\u00fa M\u1ef9, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-10-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000087/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00756/SYT-GPH\u0110",
+        "DiaChi": "009 L\u00f4 A Chung c\u01b0 - T\u00f4n Th\u1ea5t Thuy\u1ebft, Ph\u01b0\u1eddng 4, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000157/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "PH\u00d2NG KH\u00c1M N\u1ed8I T\u1ed4NG H\u1ee2P ",
+        "SoGiayPhep": "01906/SYT-GPH\u0110",
+        "DiaChi": "78/4 \u1ea4p 1, X\u00e3 Hi\u1ec7p Ph\u01b0\u1edbc, Huy\u1ec7n Nh\u00e0 B\u00e8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000180/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoGiayPhep": "04648/SYT-GPH\u0110",
+        "DiaChi": "1127 Phan V\u0103n Tr\u1ecb, Ph\u01b0\u1eddng 10, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-07-07 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa M\u1eaft",
+        "SoCCHN_NDD": "000183/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "PH\u00d2NG KH\u00c1M N\u1ed8I T\u1ed4NG H\u1ee2P",
+        "SoGiayPhep": "00241/SYT-GPH\u0110",
+        "DiaChi": "61 \u0110\u01b0\u1eddng s\u1ed1 5 Khu C B\u00f4ng Sao, Ph\u01b0\u1eddng 5, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-05-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000134/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ngo\u1ea1i ni\u1ec7u",
+        "SoGiayPhep": "01967/SYT-GPH\u0110",
+        "DiaChi": "S\u1ed1 3 Nguy\u1ec5n Th\u1ecb R\u01b0, T\u1ed5 7, KP7, T.T.C\u1ee7 Chi , Huy\u1ec7n C\u1ee7 Chi, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-03-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ngo\u1ea1i ni\u1ec7u",
+        "SoCCHN_NDD": "000135/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "C\u00f4ng ty TNHH Nha khoa Elite thu\u1ed9c C\u00f4ng ty TNHH Nha Khoa Elite",
+        "SoGiayPhep": "00005/SYT-GPH\u0110",
+        "DiaChi": "57A Tr\u1ea7n Qu\u1ed1c Th\u1ea3o, Ph\u01b0\u1eddng 7, Qu\u1eadn 3, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-05-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000151/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m \u0111a khoa thu\u1ed9c C\u00f4ng ty C\u1ed5 ph\u1ea7n Victoria Healthcare M\u1ef9 M\u1ef9",
+        "SoGiayPhep": "01347/SYT-GPH\u0110",
+        "DiaChi": "135A Nguy\u1ec5n V\u0103n Tr\u1ed7i, Ph\u01b0\u1eddng 12, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-12-25 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m \u0111a khoa",
+        "SoCCHN_NDD": "003816/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "01071/SYT-GPH\u0110",
+        "DiaChi": "13C H\u01b0ng Ph\u00fa, Ph\u01b0\u1eddng 9, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-08-04 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000096/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "04132/SYT-GPH\u0110",
+        "DiaChi": "362/7 Nguy\u1ec5n \u0110\u00ecnh Chi\u1ec3u, Ph\u01b0\u1eddng 4, Qu\u1eadn 3, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-12-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "0000975/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoGiayPhep": "00132/SYT-GPH\u0110",
+        "DiaChi": "189 Hu\u1ef3nh V\u0103n B\u00e1nh, Ph\u01b0\u1eddng 12, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-06-05 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoCCHN_NDD": "000101/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "None",
+        "SoGiayPhep": "01661/SYT-GPH\u0110",
+        "DiaChi": "861/64 Tr\u1ea7n Xu\u00e2n So\u1ea1n, P.T\u00e2n H\u01b0ng, Qu\u1eadn 7, TP.H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-20 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000165/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoGiayPhep": "00172/SYT-GPH\u0110",
+        "DiaChi": "57/4 Nguy\u1ec5n Tu\u00e2n, Ph\u01b0\u1eddng 3, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-07-09 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000166/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00224/SYT-GPH\u0110",
+        "DiaChi": "142 B\u00ecnh Qu\u1edbi, Ph\u01b0\u1eddng 27, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-08-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000167/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng h\u00e0m m\u1eb7t thu\u1ed9c C\u00f4ng ty C\u1ed5 ph\u1ea7n Ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe Amy",
+        "SoGiayPhep": "00202/SYT-GPH\u0110",
+        "DiaChi": "166B Tr\u1ea7n \u0110\u00ecnh Xu, Ph\u01b0\u1eddng Nguy\u1ec5n C\u01b0 Trinh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-07-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000170/\u0110NAI-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00070/SYT-GPH\u0110",
+        "DiaChi": "98 \u0110\u01b0\u1eddng s\u1ed1 3, Ph\u01b0\u1eddng 9, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-04-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000183/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "02038/SYT-GPH\u0110",
+        "DiaChi": "101 Ph\u00f9 \u0110\u1ed5ng Thi\u00ean V\u01b0\u01a1ng, Ph\u01b0\u1eddng 11, Qu\u1eadn 5, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-03-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000184/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "04608/SYT-GPH\u0110",
+        "DiaChi": "450 N\u01a1 Trang Long, Ph\u01b0\u1eddng 13, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-06-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000185/NT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00121/SYT-GPH\u0110",
+        "DiaChi": "416 T\u00f4n \u0110\u1ea3n, Ph\u01b0\u1eddng 4, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-05-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000188/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Chi nh\u00e1nh C\u00f4ng ty C\u1ed5 ph\u1ea7n B\u1ec7nh vi\u1ec7n \u0111a khoa Qu\u1ed1c t\u1ebf H\u1ea1nh Ph\u00fac",
+        "SoGiayPhep": "00345/SYT-GPH\u0110",
+        "DiaChi": "L\u1ea7u 2, T\u00f2a nh\u00e0 Belco s\u1ed1 97 Nguy\u1ec5n Th\u1ecb Minh Khai, Ph\u01b0\u1eddng B\u1ebfn Th\u00e0nh, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-09-30 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000103/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoGiayPhep": "02259/SYT-GPH\u0110",
+        "DiaChi": "202 L\u00f4 G Chung c\u01b0 \u0110\u1ed3ng Di\u1ec1u, Ph\u01b0\u1eddng 4, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-21 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000122/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00612/SYT-GPH\u0110",
+        "DiaChi": "361 Qu\u1ed1c l\u1ed9 22, T\u1ed5 3, \u1ea4p Th\u01b0\u1ee3ng, X\u00e3 T\u00e2n Th\u00f4ng H\u1ed9i, Huy\u1ec7n C\u1ee7 Chi, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000174/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh",
+        "SoGiayPhep": "03316/SYT-GPH\u0110",
+        "DiaChi": "24/2 \u0110o\u00e0n Th\u1ecb \u0110i\u1ec3m, Ph\u01b0\u1eddng 1, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-07-31 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh ",
+        "SoCCHN_NDD": "000178/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng x\u00e9t nghi\u1ec7m thu\u1ed9c C\u00f4ng ty TNHH Y khoa \u0110\u1ee9c Vi\u1ec7t \u00dac",
+        "SoGiayPhep": "04570",
+        "DiaChi": "3 T\u0103ng B\u1ea1t H\u1ed5, Ph\u01b0\u1eddng 12, Qu\u1eadn 5, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-06-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng x\u00e9t nghi\u1ec7m",
+        "SoCCHN_NDD": "000181/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i tim m\u1ea1ch",
+        "SoGiayPhep": "03758/SYT-GPH\u0110",
+        "DiaChi": "162 Nguy\u1ec5n Thi\u1ec7n Thu\u1eadt, Ph\u01b0\u1eddng 3, Qu\u1eadn 3, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-10-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i Tim m\u1ea1ch",
+        "SoCCHN_NDD": "0001831/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n thu\u1ed9c C\u00f4ng ty TNHH M\u1ed9t th\u00e0nh vi\u00ean Y h\u1ecdc c\u1ed5 truy\u1ec1n Thi\u00ean Long",
+        "SoGiayPhep": "04942/SYT-GPH\u0110",
+        "DiaChi": "13 C\u1eedu Long, Ph\u01b0\u1eddng 2, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-10-26 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoCCHN_NDD": "000196/BD-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng x\u00e9t nghi\u1ec7m ",
+        "SoGiayPhep": "01565",
+        "DiaChi": "39 S\u01b0 V\u1ea1n H\u1ea1nh, Ph\u01b0\u1eddng 3, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-07-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng x\u00e9t nghi\u1ec7m",
+        "SoCCHN_NDD": "000207/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa",
+        "SoGiayPhep": "01569/SYT-GPH\u0110",
+        "DiaChi": "526 B\u00e0 H\u1ea1t, Ph\u01b0\u1eddng 8, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-13 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000209/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00201/SYT-GPH\u0110",
+        "DiaChi": "221/18 Phan V\u0103n Kh\u1ecfe, Ph\u01b0\u1eddng 5, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-07-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000218/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m \u0111a khoa thu\u1ed9c C\u00f4ng ty TNHH Ph\u00f2ng kh\u00e1m \u0111a khoa Thi\u00ean Ph\u00fac",
+        "SoGiayPhep": "04664/SYT-GPH\u0110",
+        "DiaChi": "83 L\u00ea V\u0103n Vi\u1ec7t, Ph\u01b0\u1eddng Hi\u1ec7p Ph\u00fa, Qu\u1eadn 9, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-07-09 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m \u0111a khoa",
+        "SoCCHN_NDD": "000139/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i Tim m\u1ea1ch",
+        "SoGiayPhep": "03532/SYT-GPH\u0110",
+        "DiaChi": "107 L\u00ea Qu\u1ed1c H\u01b0ng, Ph\u01b0\u1eddng 12, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-10-23 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa N\u1ed9i Tim m\u1ea1ch",
+        "SoCCHN_NDD": "0001424/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "PH\u00d2NG KH\u00c1M CHUY\u00caN KHOA R\u0102NG H\u00c0M M\u1eb6T ",
+        "SoGiayPhep": "04325/SYT-GPH\u0110",
+        "DiaChi": "412D L\u00ea V\u0103n S\u1ef9, Ph\u01b0\u1eddng 2, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-03-04 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000153/\u0110NAI-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00611/SYT-GPH\u0110",
+        "DiaChi": "167 Tr\u1ea7n Huy Li\u1ec7u, Ph\u01b0\u1eddng 8, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-11-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000224/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "None",
+        "SoGiayPhep": "00186/SYT-GPH\u0110",
+        "DiaChi": "15/3 X\u00f4 Vi\u1ebft Ngh\u1ec7 T\u0129nh, Ph\u01b0\u1eddng 21, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP.H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-07-09 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000227/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00025/SYT-GPH\u0110",
+        "DiaChi": "101 Tr\u1ea7n H\u1eefu Trang, Ph\u01b0\u1eddng 10, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-01-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000229/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "00200/SYT-GPH\u0110",
+        "DiaChi": "46 \u0110\u01b0\u1eddng s\u1ed1 1 - KDC L\u00fd Chi\u00eau Ho\u00e0ng, Khu ph\u1ed1 6, Ph\u01b0\u1eddng An l\u1ea1c , Qu\u1eadn B\u00ecnh T\u00e2n, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2016-10-10 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "000230/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng Ch\u1ea9n tr\u1ecb Y h\u1ecdc c\u1ed5 truy\u1ec1n ",
+        "SoGiayPhep": "04606/SYT-GPH\u0110",
+        "DiaChi": "145 Hoa Lan, Ph\u01b0\u1eddng 2, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-06-23 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoCCHN_NDD": "000186/QT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1ee5c h\u1ed3i ch\u1ee9c n\u0103ng",
+        "SoGiayPhep": "03458/SYT-GPH\u0110",
+        "DiaChi": "343/1C T\u00f4 Hi\u1ebfn Th\u00e0nh, Ph\u01b0\u1eddng 12, Qu\u1eadn 10, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-09-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1ee5c h\u1ed3i ch\u1ee9c n\u0103ng",
+        "SoCCHN_NDD": "000193/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1ee5c h\u1ed3i ch\u1ee9c n\u0103ng thu\u1ed9c chi nh\u00e1nh C\u00f4ng ty TNHH Ph\u00e1t tri\u1ec3n Y t\u1ebf Gia \u0110\u00ecnh",
+        "SoGiayPhep": "00450/SYT-GPH\u0110",
+        "DiaChi": "10 Tr\u1ea7n Ph\u00fa, Ph\u01b0\u1eddng 4, Qu\u1eadn 5, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-08-20 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1ee5c h\u1ed3i ch\u1ee9c n\u0103ng",
+        "SoCCHN_NDD": "000194/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "C\u00f4ng ty TNHH Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9 M\u1eaft Ng\u1ecdc",
+        "SoGiayPhep": "00009/SYT-GPH\u0110",
+        "DiaChi": "246-248-250 L\u00fd Th\u00e1i T\u1ed5, Ph\u01b0\u1eddng 1, Qu\u1eadn 3, TP.H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-06-29 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ph\u1eabu thu\u1eadt th\u1ea9m m\u1ef9",
+        "SoCCHN_NDD": "000195/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa",
+        "SoGiayPhep": "02652/SYT-GPH\u0110",
+        "DiaChi": "316-318 T\u00f9ng Thi\u1ec7n V\u01b0\u01a1ng, Ph\u01b0\u1eddng 13, Qu\u1eadn 8, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-05-08 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000172/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoGiayPhep": "01567/SYT-GPH\u0110",
+        "DiaChi": "330/12 Phan \u0110\u00ecnh Ph\u00f9ng, Ph\u01b0\u1eddng 1, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Tai M\u0169i H\u1ecdng",
+        "SoCCHN_NDD": "000175/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh",
+        "SoGiayPhep": "02165/SYT-GPH\u0110",
+        "DiaChi": "40/9 Nguy\u1ec5n V\u0103n \u0110\u1eadu, Ph\u01b0\u1eddng 6, Qu\u1eadn B\u00ecnh Th\u1ea1nh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-17 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh ",
+        "SoCCHN_NDD": "000196/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoGiayPhep": "00024/SYT-GPH\u0110",
+        "DiaChi": "42 Ho\u00e0ng V\u0103n Th\u1ee5, Ph\u01b0\u1eddng 9, Qu\u1eadn Ph\u00fa Nhu\u1eadn, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-01-22 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoCCHN_NDD": "000199/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "00344/SYT-GPH\u0110",
+        "DiaChi": "142 L\u00ea \u0110\u1ee9c Th\u1ecd, Ph\u01b0\u1eddng 6, Qu\u1eadn G\u00f2 V\u1ea5p, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2013-09-30 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000205/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoGiayPhep": "01940/SYT-GPH\u0110",
+        "DiaChi": "213 \u00c2u C\u01a1, Ph\u01b0\u1eddng 5, Qu\u1eadn 11, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-03-19 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Da li\u1ec5u",
+        "SoCCHN_NDD": "000206/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t (thu\u1ed9c C\u00f4ng ty TNHH Nha khoa Sky)",
+        "SoGiayPhep": "03474/HCM-GPH\u0110",
+        "DiaChi": "375-377 Nguy\u1ec5n Th\u00e1i B\u00ccnh, Ph\u01b0\u1eddng 12, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2017-07-31 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "000211/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "03580/SYT-GPH\u0110",
+        "DiaChi": "63/13 Pasteur, Ph\u01b0\u1eddng B\u1ebfn Ngh\u00e9, Qu\u1eadn 1, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-10-23 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "0002117/BYT-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoGiayPhep": "04080/SYT-GPH\u0110",
+        "DiaChi": "551/5/2 B\u1ebfn Ph\u00fa L\u00e2m, Ph\u01b0\u1eddng 9, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-11-25 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng ch\u1ea9n tr\u1ecb y h\u1ecdc c\u1ed5 truy\u1ec1n",
+        "SoCCHN_NDD": "0002094/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoGiayPhep": "03402/SYT-GPH\u0110",
+        "DiaChi": "311 H\u1eadu Giang, Ph\u01b0\u1eddng 5, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-09-24 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m N\u1ed9i t\u1ed5ng h\u1ee3p",
+        "SoCCHN_NDD": "0002128/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoGiayPhep": "04316/SYT-GPH\u0110",
+        "DiaChi": "134/40 \u0110o\u00e0n V\u0103n B\u01a1, Ph\u01b0\u1eddng 9, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2015-03-04 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000214/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa ",
+        "SoGiayPhep": "01429/SYT-GPH\u0110",
+        "DiaChi": "208 Tr\u1ea7n B\u00ecnh Tr\u1ecdng, Ph\u01b0\u1eddng 4, Qu\u1eadn 5, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-02-12 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000216/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n Ph\u1ee5 khoa",
+        "SoGiayPhep": "03088/SYT-GPH\u0110",
+        "DiaChi": "194 Phan V\u0103n H\u1edbn, T\u1ed5 67, KP 6, Ph\u01b0\u1eddng T\u00e2n Th\u1edbi Nh\u1ea5t, Qu\u1eadn 12, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-07-14 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa S\u1ea3n ph\u1ee5 khoa",
+        "SoCCHN_NDD": "000237/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoGiayPhep": "03934/SYT-GPH\u0110",
+        "DiaChi": "74B B\u1ea1ch \u0110\u1eb1ng, Ph\u01b0\u1eddng 2, Qu\u1eadn T\u00e2n B\u00ecnh, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-10-31 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa R\u0103ng H\u00e0m M\u1eb7t",
+        "SoCCHN_NDD": "0002372/GL-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoGiayPhep": "01115/SYT-GPH\u0110",
+        "DiaChi": "296 Kh\u00e1nh H\u1ed9i, Ph\u01b0\u1eddng 5, Qu\u1eadn 4, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-07-02 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Nhi",
+        "SoCCHN_NDD": "000249/HCM-CCHN"
+      },
+      {
+        "TenCoSo": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh ",
+        "SoGiayPhep": "02356/SYT-GPH\u0110",
+        "DiaChi": "131B B\u00e3i S\u1eady, Ph\u01b0\u1eddng 1, Qu\u1eadn 6, TP H\u1ed3 Ch\u00ed Minh",
+        "NgayCap": "2014-04-21 00:00:00",
+        "TinhTrang": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+        "TenHinhThuc": "Ph\u00f2ng kh\u00e1m chuy\u00ean khoa Ch\u1ea5n th\u01b0\u01a1ng ch\u1ec9nh h\u00ecnh ",
+        "SoCCHN_NDD": "000223/HCM-CCHN"
+      }
+    ]
+  }
+};

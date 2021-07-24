@@ -22,5 +22,7 @@ namespace Glviangle.WebApp.Models.PageModel
         public string title { get; set; }
 
         public bool isHomepage = false;
+
+        public bool isNearPlace = false;
     }
 }
