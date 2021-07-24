@@ -5974,19 +5974,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KHOADANG\\.nuget\\packages\\": {}
+    "C:\\Users\\RomanDang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj",
+      "projectUniqueName": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Application\\Glviangle.Application.csproj",
       "projectName": "Glviangle.Application",
-      "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\Glviangle.Application.csproj",
-      "packagesPath": "C:\\Users\\KHOADANG\\.nuget\\packages\\",
-      "outputPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Application\\obj\\",
+      "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Application\\Glviangle.Application.csproj",
+      "packagesPath": "C:\\Users\\RomanDang\\.nuget\\packages\\",
+      "outputPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KHOADANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RomanDang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5998,12 +5998,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj": {
-              "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.Data\\Glviangle.Data.csproj"
+            "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj": {
+              "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.Data\\Glviangle.Data.csproj"
             },
-            "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj": {
-              "projectPath": "E:\\PROJECT_DOAN\\Glviangle\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj"
+            "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj": {
+              "projectPath": "D:\\PROJECT_DOAN\\glevieagle-project\\Glviangle.ViewModel\\Glviangle.ViewModel.csproj"
             }
           }
         }
@@ -6016,6 +6017,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -6031,7 +6033,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

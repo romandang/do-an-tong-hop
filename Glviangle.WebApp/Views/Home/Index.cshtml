@@ -1,7 +1,837 @@
-﻿@model Glviangle.Core.Models.RenderContentViewModel;
+﻿@model Glviangle.WebApp.Models.BlogModel.BlogVM;
 
-@section head{ 
-    @Html.Raw(Model.Head)
+@{
+    ViewData["Title"] = "View";
+    var item = Model.home.Data;
+    var blogs = Model.listBlog;
+    var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
 }
 
-@Html.Raw(Model.Content)
+
+<section class="rev_slider_wrapper">
+    <div id="slider1" class="rev_slider" data-version="5.0">
+        <ul>
+            @foreach (var data in item.homeSlider)
+            {
+                <li data-transition="parallaxvertical">
+                    <img src="@imagePath/@data.bannerImage[0]" alt="" width="1920" height="705" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                    <div class="tp-caption sfl tp-resizeme thm-banner-h1"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="225"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="500">
+                        @data.bannerTitle1
+                    </div>
+                    <div class="tp-caption sfr tp-resizeme thm-banner-h1 heavy"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="280"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="1000">
+                        @data.bannerTitle2
+                    </div>
+                    <div class="tp-caption sfb tp-resizeme thm-banner-h3"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="353"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="1500">
+                        @data.bannerSubtitle
+                    </div>
+                    <div class="tp-caption sfb tp-resizeme thm-banner-p"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="404"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="2000">
+                        @data.bannerDescription
+                    </div>
+                    <div class="tp-caption sfl tp-resizeme"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="474"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="2300">
+                        <a href="tel:@data.phoneNumber" class="thm-btn">Gọi cho chúng tôi ngay hôm nay</a>
+                    </div>
+                    <div class="tp-caption sfr tp-resizeme"
+                         data-x="left" data-hoffset="185"
+                         data-y="top" data-voffset="474"
+                         data-whitespace="nowrap"
+                         data-transform_idle="o:1;"
+                         data-transform_in="o:0"
+                         data-transform_out="o:0"
+                         data-start="2600">
+                        <a href="@data.relativeLink" class="thm-btn inverse">Đọc thêm</a>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+
+<section class="call-to-action">
+    <div class="container-fluid">
+        <div class="clearfix">
+            <div class="call-to-action-corner col-md-4" style="background-image: url(img/call-to-action/left-box-bg.jpg);">
+                <div class="single-call-to-action">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-clock"></i>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3>GIỜ MỞ CỬA</h3>
+                        <ul>
+                            <li><span>Thứ hai - Thứ sáu</span> <span>9h - 22h</span></li>
+                            <li><span>Chủ nhật</span> <span>Đóng cửa</span></li>
+                            <li><span>Thứ bảy</span> <span>Đóng cửa</span></li>
+                            <li>&nbsp;</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="call-to-action-center col-md-4" style="background-image: url(img/call-to-action/center-box-bg.jpg);">
+                <div class="single-call-to-action">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-medical"></i>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3>Đặt Lịch</h3>
+                        <p>Có sẵn lịch hẹn, hãy gọi cho chúng tôi <br> ngay hôm nay hoặc đặt lịch hẹn</p>
+                        <a href="appointment.html" class="thm-btn inverse">Đặt ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="call-to-action-corner col-md-4" style="background-image: url(img/call-to-action/right-box-bg.jpg);">
+                <div class="single-call-to-action">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-coins"></i>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3>Hệ Thống Hoá Đơn Trực Tuyến</h3>
+                        <p>Chúng tôi có hỗ trợ thanh toán hoá đơn trực tuyến<br>cho các khách hàng có nhu cầu muốn thanh toán trực tuyến<br>không mất thêm bất kỳ chi phí nào</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-padding">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h2>Chúng Tôi Chuyên Về</h2>
+            <p>'ĐỒNG HÀNH CÙNG BẠN - VƯỢT CẠN AN TOÀN'</p>
+            <span class="decor"><span class="inner"></span></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 ">
+                <div class="single-specialize text-center">
+                    <div class="icon-box">
+                        <i class="flaticon-medical-1"></i>
+                    </div>
+                    <h3>Chăm Sóc Sức Khỏe Ban Đầu</h3>
+                    <p>Hiện nay, với những thay đổi nhanh chóng về mô hình bệnh tật, về dân số học, về kinh tế xã hội, Chăm sóc sức khỏe ban đầu vẫn là chìa khóa của chính sách y tế nhằm chăm sóc sức khỏe một cách toàn diện và công bằng, nhân bản, gắn sức khỏe với sự phát triển chung của quốc gia. Phúc trình của Tổ chức sức khỏe thế giới (WHO) 2008 vẫn khẳng định “Chăm sóc sức khỏe ban đầu: Bây giờ hơn bao giờ hết!” (Primary Health Care, Now more than Ever) đã nói lên tầm quan trọng chiến lược của nó.</p>
+                    <a href="service-details.html" class="thm-btn">Đọc thêm</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 ">
+                <div class="single-specialize text-center">
+                    <div class="icon-box">
+                        <i class="flaticon-medical-3"></i>
+                    </div>
+                    <h3>Điều Trị Nha Khoa</h3>
+                    <p>Viêm nha chu, còn được gọi là bệnh nướu răng, là một bệnh nhiễm trùng nướu răng nghiêm trọng làm tổn thương mô mềm và nếu không điều trị, có thể phá hủy xương nâng đỡ răng của bạn. Viêm nha chu có thể làm lung lay răng hoặc dẫn đến mất răng. Viêm nha chu là bệnh phổ biến nhưng phần lớn có thể phòng ngừa được.</p>
+                    <a href="service-details.html" class="thm-btn">Đọc thêm</a>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-3 col-xs-offset-0">
+                    <div class="single-specialize text-center">
+                        <div class="icon-box">
+                            <i class="flaticon-medical-2"></i>
+                        </div>
+                        <h3>Điều Trị Tim</h3>
+                        <p>Bệnh tim là nguyên nhân gây tử vong hàng đầu, gây ra khoảng 1/4 trường hợp tử vong. Thuật ngữ “bệnh tim” dùng để chỉ một số loại bệnh tim. Loại bệnh tim phổ biến nhất là bệnh động mạch vành (CAD), có thể dẫn đến đau tim. Bạn có thể giảm đáng kể nguy cơ mắc bệnh tim thông qua thay đổi lối sống và trong một số trường hợp là dùng thuốc.</p>
+                        <a href="service-details.html" class="thm-btn">Đọc thêm</a>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="full-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 hidden-md hidden-sm hidden-xs">
+                <img class="full-image pull-right" src="~/img/resources/full-image-1.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="full-sec-content">
+                    <div class="sec-title style-two">
+                        <h2>Thông Tin Thêm Về Chúng Tôi</h2>
+                        <span class="decor">
+                            <span class="inner"></span>
+                        </span>
+                    </div>
+                    <h3>Chúng tôi cung cấp dịch vụ chuyên nghiệp nhất <br>Kể từ năm 1978</h3>
+                    <br>
+                    <p>Chúng tôi đã giúp cho nhiều khách hàng dễ dàng tìm được nơi để khám chữa bệnh một cách nhanh chóng nhất</p>
+                    <br>
+                    <p>Chúng tôi luôn có tư vấn viên 24/24 liên tục hỗ trợ khách hàng, tư vấn tận tình hỗ trợ cho khách hàng có thể tìm đến được các phòng khám, bệnh viện phù hợp.</p>
+                    <br>
+                    <a href="about.html" class="thm-btn">Đọc thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="offer-wrapper">
+    <div class="has-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-offer left">
+                        <h3><span>Hồ sơ tiêm chủng</span>FLORIDA SHOTS</h3>
+                        <p>Theo dõi chủng ngừa chưa bao giờ dễ dàng hoặc an toàn hơn với Florida SHOTS ™. Để in hồ sơ của con bạn, bạn sẽ cần</p>
+                        <a href="#" class="thm-btn">In ngay</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-offer right">
+                        <h3>Chúng tôi tích lũy được nhiều bảo hiểm nhất</h3>
+                        <p>Chúng tôi cung cấp các dịch vụ bảo hiểm mang lại nhiều phúc lợi cho các khách hàng tiềm năng</p>
+                        <a href="#">Sử dụng công cụ kiểm tra bảo hiểm của chúng tôi <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home-serivce sec-padding">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h2>Chúng tôi chuyên về</h2>
+            <p>'GIEO MẦM HY VỌNG - GẶT TRỌN YÊU THƯƠNG'</p>
+            <span class="decor"><span class="inner"></span></span>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-medical-3"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Nha Khoa</h3>
+                        <p>Chúng tôi giới thiệu, đặt lịch cho khách hàng các nha khoa có chuyên môn về răng, miệng <br>cũng như xương hàm, nướu và mạc mô trong miệng <br> gồm luôn cả các phần gần xương mặt và má </p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-medical-4"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Tim Mạch</h3>
+                        <p>Chúng tôi giới thiệu, đặt lịch cho khách hàng các phòng khám, <br>bệnh viện có chuyên môn về các bệnh tim mạch <br> như: Nhồi máu cơ tim, suy tim, viêm cơ tim ... </p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-medical-5"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Thần Kinh Học</h3>
+                        <p>Chúng tôi giới thiệu,đặt lịch cho khách hàng các phòng khám <br>bệnh viện có chuyên môn về hệ thần kinh<br> but the majority have </p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-medical-6"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Cấy ghép</h3>
+                        <p>Chúng tôi giới thiệu, đặt lịch cho khách hàng các bệnh viện <br>có trình độ chuyên môn về cấy ghép <br>cũng như có các thiết bị máy móc hiện đại, phù hợp.</p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-people-2"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Tia X</h3>
+                        <p>Chúng tôi sẽ giới thiệu, đặt lịch cho khách hàng các phòng khám <br>bệnh viện các các máy móc, thiết bị <br> để giúp tiến hành các chụp, kiểm tra nhiều bộ phận của cơ thể </p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-service-home">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-people-1"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Thai Kỳ</h3>
+                        <p> Chúng tôi sẽ giới thiệu, đặt lịch cho khách hàng các phòng khám<br>bệnh viện có các thiết bị, máy móc <br> kiểm tra, hỗ trợ cho các mẹ cũng như các thai nhi</p>
+                        <a href="service-details.html">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-padding faq-home">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="sec-title style-two">
+                    <h2>Tại Sao Chọn Chúng Tôi ?</h2>
+                    <span class="decor">
+                        <span class="inner"></span>
+                    </span>
+                </div>
+                <div class="accrodion-grp" data-grp-name="faq-accrodion">
+                    <div class="accrodion active">
+                        <div class="accrodion-title">
+                            <h4>
+                                <span class="decor">
+                                    <span class="inner"></span>
+                                </span>
+                                <span class="text">Chúng tôi luôn quan tâm đến bệnh nhân và dịch vụ của chúng tôi </span>
+                            </h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <p>Chúng tôi luôn đặt sức khoẻ của bệnh nhân lên hàng đầu, đảm bảo bệnh nhân khi đến với chúng tôi, chúng tôi sẽ mang lại sự hài lòng, phục vụ tận tình cho các bệnh nhân.</p>
+                            <p>Bên cạnh sức khoẻ của bệnh nhân thì chúng tôi cũng luôn cải thiện các dịch vụ của chúng tôi để đạt được hiệu quả tốt nhất, mang lại sự thoải mái cho khách hàng.</p>
+                        </div>
+                    </div>
+                    <div class="accrodion ">
+                        <div class="accrodion-title">
+                            <h4>
+                                <span class="decor">
+                                    <span class="inner"></span>
+                                </span>
+                                <span class="text">Đặt chỗ và đăng ký với bất kỳ chuyên gia nào bất kỳ lúc nào</span>
+                            </h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <p>Chúng tôi sẽ đặt lịch theo yêu cầu của khách hàng với bất kỳ nơi nào cũng như với bất kỳ bác sĩ chuyên gia nào mà bệnh nhận, khách hàng mong muốn.</p>
+                            <p>Đồng thời nếu khách hàng, bệnh nhân vẫn chưa có chỗ đặt hay chuyên gia điều trị thì sẽ có nhân viên tư vấn để chọn được phòng khám, bệnh viện phù hợp</p>
+                        </div>
+                    </div>
+                    <div class="accrodion ">
+                        <div class="accrodion-title">
+                            <h4>
+                                <span class="decor">
+                                    <span class="inner"></span>
+                                </span>
+                                <span class="text"> Chúng tôi cung cấp nhiều dịch vụ với giá tốt nhất</span>
+                            </h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <p>Chúng tôi cũng có rất nhiều dịch vụ với giá tốt như là bảo hiểm, các quà tặng, phúc lợi hàng tháng</p>
+                            <p>Khi là thành viên của chúng tôi các bạn sẽ được nhiêu ưu đãi hấp dẫn, khi đặt lịch khám, chữa bệnh thì sẽ được chúng tôi sắp xếp một cách nhanh chóng nhất có thể</p>
+                        </div>
+                    </div>
+                    <div class="accrodion ">
+                        <div class="accrodion-title">
+                            <h4>
+                                <span class="decor">
+                                    <span class="inner"></span>
+                                </span>
+                                <span class="text">Hệ thống thanh toán trực tuyến với các phương thức khác nhau</span>
+                            </h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <p>Chúng tôi tạo ra nhiều phương thức thanh toán cho khách hàng để phục vụ việc chi trả được thuận lợi và nhanh chóng</p>
+                            <p>Các hệ thống thanh toán luôn xử lý một cách nhanh chóng để không mất nhiều thời gian của khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 hidden-md">
+                <div class="img-masonary">
+                    <div class="img-w1">
+                        <img src="~/img/faq/1.jpg" height="450" width="280" alt="">
+                    </div>
+                    <div class="img-w1 img-h1">
+                        <img src="~/img/faq/2.jpg" height="450" width="280" alt="">
+                    </div>
+                    <div class="img-w1 img-h1">
+                        <img src="~/img/faq/3.jpg" height="450" width="280" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="fact-counter-wrapper sec-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-4">
+                <h2>Chúng tôi được phục vụ từ<b>35 năm</b> <br>cho khách hàng của chúng tôi với sự tin tưởng và <br>chúng tôi hạnh phúc</h2>
+                <a href="#" class="thm-btn inverse">Hãy là thành viên của chúng tôi</a>
+            </div>
+            <div class="col-lg-6 col-md-8">
+                <div class="single-fact">
+                    <div class="icon-box">
+                        <i class="flaticon-cup"></i>
+                    </div>
+                    <span class="timer" data-from="10" data-to="365" data-speed="5000" data-refresh-interval="50">365</span>
+                    <p>TỔNG GIẢI THƯỞNG</p>
+                </div>
+                <div class="single-fact">
+                    <div class="icon-box">
+                        <i class="flaticon-people-3"></i>
+                    </div>
+                    <span class="timer" data-from="10" data-to="155" data-speed="5000" data-refresh-interval="50">155</span>
+                    <p>Tổng số bác sĩ</p>
+                </div>
+                <div class="single-fact">
+                    <div class="icon-box">
+                        <i class="flaticon-other"></i>
+                    </div>
+                    <span class="timer" data-from="10" data-to="2200" data-speed="5000" data-refresh-interval="50">2200</span>
+                    <p>Tổng số giường</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-padding meet-doctors">
+    <div class="container">
+        <div class="sec-title text-left">
+            <h2>Gặp gỡ các bác sĩ của chúng tôi</h2>
+            <p>Bác sĩ của chúng tôi ân cần, mỉm cười với bệnh nhân</p>
+            <span class="decor"><span class="inner"></span></span>
+        </div>
+        <div class="clearfix">
+            <div class="team-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Dr.Hồ Lâm Viên</h3>
+                        <span>Nhà Vật Lý Trị Liệu</span>
+                        <p>Bác sĩ Hồ Lâm Viên hiện đang là Thạc sĩ, Chủ nhiệm khoa Vật Lý Trị Liệu của Bệnh viện, đã công tác tại khoa này từ năm 1994, tới nay, ông đã cho ra nhiều công trình nghiên cứu về việc sử dụng phương pháp Vật lý trị liệu trong chẩn đoán bệnh</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR. Lê Xuân Thành</h3>
+                        <span>Chuyên Khoa Thần Kinh</span>
+                        <p>Bác sĩ Lê Xuân Thành hiện là chủ nhiệm khoa Thần Kinh của bệnh viện . Đã có 28 năm kinh nghiệm trong lĩnh vực này, ông có nhiều công trình nghiên cứu liên quan đến thần kinh</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR. Ngô Gia Hân</h3>
+                        <span>Chuyên Gia Da Liễu</span>
+                        <p>Ngô Gia Hân hiện là Trưởng khoa Da Liễu. Qua 26 năm công tác tại Bệnh viện, chị đã có được những kinh nghiệm quý báu trong lĩnh vực và thực hiện nhiều nghiên cứu về phẫu thuật.</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR.Trần Gia Thịnh</h3>
+                        <span>Chuyên Gia Tim Mạch</span>
+                        <p>Bác sĩ Trần Gia Thịnh hiện là Trưởng khoa của khoa Tim mạch.Qua 30 năm công tác tại Bênh viện,ông đã có những kinh nghiệm quý báu trong lĩnh vưc và thực hiện nhiều nghiên cứu cũng như trải qua các ca phẩu thuật khó khăn</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Dr. Hồ Lâm Viên</h3>
+                        <span>Nhà Vật Lý Trị Liệu</span>
+                        <p>Bác sĩ Hồ Lâm Viên hiện đang là Thạc sĩ, Chủ nhiệm khoa Vật Lý Trị Liệu của Bệnh viện, đã công tác tại khoa này từ năm 1994, tới nay, ông đã cho ra nhiều công trình nghiên cứu về việc sử dụng phương pháp Vật lý trị liệu trong chẩn đoán bệnh</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR.Lê Xuân Thành</h3>
+                        <span>Chuyên Khoa Thần Kinh</span>
+                        <p>Bác sĩ Lê Xuân Thành hiện là chủ nhiệm khoa Thần Kinh của bệnh viện . Đã có 28 năm kinh nghiệm trong lĩnh vực này, ông có nhiều công trình nghiên cứu liên quan đến thần kinh</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR. Ngô Gia Hân</h3>
+                        <span>Chuyên Gia Da Liễu</span>
+                        <p>Ngô Gia Hân hiện là Trưởng khoa Da Liễu. Qua 26 năm công tác tại Bệnh viện, chị đã có được những kinh nghiệm quý báu trong lĩnh vực và thực hiện nhiều nghiên cứu về phẫu thuật.</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-team-member">
+                        <div class="img-box">
+                            <img src="~/img/team/4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>DR. Trần Gia Thịnh</h3>
+                        <span>Chuyên Gia Tim Mạch</span>
+                        <p>Bác sĩ Trần Gia Thịnh hiện là Trưởng khoa của khoa Tim mạch.Qua 30 năm công tác tại Bênh viện,ông đã có những kinh nghiệm quý báu trong lĩnh vưc và thực hiện nhiều nghiên cứu cũng như trải qua các ca phẩu thuật khó khăn</p>
+                        <a href="doctor-profile.html" class="thm-btn">Xem thông tin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-padding testimonials-wrapper">
+    <div class="container">
+        <div class="sec-title colored text-center">
+            <h2>Lời chứng thực</h2>
+            <span class="decor">
+                <span class="inner"></span>
+            </span>
+        </div>
+        <div class="testimonaials-carousel owl-carousel owl-theme">
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Sức khỏe của tôi hiện tại được ổn định, mạnh khỏe là phần lớn công sức của các Bác sĩ, y tá trong bệnh viện. Nếu không có sự quan tâm, chăm sóc ân cần, tận tâm từ đội ngũ Bác sĩ, y tá thì bây giờ tôi đã không hưởng thụ cuộc sống vui</p>
+                    <h3>Nguyễn Bảo Lân</h3>
+                    <span>Bình Dương</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Tôi cảm thấy mình may mắn khi đã đến chữa bệnh ở Bệnh viện. Các Bác sĩ, y tá luôn tận tình, vui vẻ và đặc biệt là thường xuyên quan tâm đến bệnh nhân như việc tiêm thuốc mỗi ngày và ăn uống, nghỉ ngơi. Tôi có đôi lời cảm ơn</p>
+                    <h3>Tuyên Phan</h3>
+                    <span>Hóc Môn</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Lời đầu tiên tôi xin gửi lời cảm ơn đến các Bác sĩ và Y tá bệnh viện. Sức khỏe của tôi bây giờ đã rất tốt và ổn định, một phần lớn là nhờ kỹ năng chuyên môn của Bác sĩ, nhờ sự ân cần, nhẹ nhàng của các Y tá.</p>
+                    <h3>Dương Đức Khánh</h3>
+                    <span>Quận 1</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Bệnh viện đã đem lại cho tôi những trải nghiệm ý khoa tốt nhất, với chất lượng phục vụ và chuyên môn Bác sĩ rất tuyệt vời. Tôi xin viết vài dòng cảm ơn đến đội ngũ Bác sĩ, Y tá của bệnh viện đã hết lòng giúp đỡ, chăm sóc tôi</p>
+                    <h3>Ngô Phương Lan</h3>
+                    <span>Thủ Đức</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Trong thời gian điều trị nội trú tại Bệnh viện, tôi cảm thấy yên bình, thoải mái vì sự tử tế và nhiệt tình của tất cả các bác sĩ, y tá và hộ lý. Cảm ơn Bệnh viện rất nhiều!</p>
+                    <h3>Nguyễn Thuỳ Linh</h3>
+                    <span>Kiên Giang</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Tôi rất hài lòng về sự phục vụ của Bác Sĩ và Y Tá chữa trị hằng ngày. Các Bác sĩ rất chuyên nghiệp, nhiệt tình, tư vấn đầy đủ cho tôi về bệnh và thuốc. Các Y tá thì chu đáo, luôn động viên sức khỏe của tôi. Tôi thực sự cảm ơn Bệnh viện</p>
+                    <h3>Nguyễn Thuỳ Dương</h3>
+                    <span>Long An</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Các Bác Sĩ và Y Tá của Bệnh Viện cực kì làm tôi thấy hài lòng. Họ tận tình, vui vẻ và đặc biệt là thường xuyên quan tâm đến bệnh nhân. Họ chăm sóc cho tôi từ sức khỏe, tinh thần cho tới từng bữa ăn. Tôi rất trân trọng điều đó.</p>
+                    <h3>Phí Vĩnh Bảo</h3>
+                    <span>Quận 3</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Gia đình tôi xin gửi lời biết ơn tới các nhân viên của Bệnh viện  về dịch vụ chăm sóc đã dành cho vợ tôi Nguyễn Ngọc Nhi trong thời gian lưu viện</p>
+                    <h3>Nguyễn Văn Tới</h3>
+                    <span>Quận 12</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Gia đình tôi biết đến Bệnh viện qua lớp tiền sản của cô Kiều Lan và quyết định chọn dịch vụ gói thai sản tại viện. Tôi thấy rất hài lòng từ quá trình khám thai, chuyển dạ, lưu viện,</p>
+                    <h3>Trần Mạnh Quang</h3>
+                    <span>Quận 3</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Cảm ơn vì tất cả sự hỗ trợ mà bạn đã dành cho tôi. Tất cả các bạn đã làm tình huống tồi tệ này trở thành một kinh nghiệm tốt hơn cho tôi.</p>
+                    <h3>Trần Quang Khải</h3>
+                    <span>Bình Dương</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Tôi muốn cảm ơn bác sĩ rất nhiều vì những gì ông đã làm cho tôi, chính chẩn đoán chính xác của ông đã cứu sống tôi.</p>
+                    <h3>Phan Mạnh Dũng</h3>
+                    <span>Đồng Tháp</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-testimonaials">
+                    <div class="qoute-box">
+                        <i class="qoute">“</i>
+                    </div>
+                    <p>Tôi muốn bày tỏ lòng biết ơn sâu sắc về sự chăm sóc tận tình và chu đáo mà các bạn đã dành cho tôi. Tôi đánh giá cao phong cách làm việc chuyên nghiệp tại bệnh viện.</p>
+                    <h3>Hồ Quang Anh</h3>
+                    <span>Quận 1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-home sec-padding">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h2>Tin mới nhất</h2>
+            <p>Chúng tôi luôn cập nhật thông tin hàng ngày</p>
+            <span class="decor">
+                <span class="inner"></span>
+            </span>
+        </div>
+        <div class="row">
+            @foreach (var blog in blogs)
+            {
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-blog-post">
+                        <div class="img-box">
+                            <img src="@imagePath/@blog.Data.thumbnail[0]" alt="">
+                            <div class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href="/blogs/@blog.Id"><i class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="date-box">
+                                <div class="inner">
+                                    <div class="date">
+                                        @Html.Raw(blog.Data.dateCreate) 
+                                    </div>
+                                    <div class="comment">
+                                        <i class="flaticon-interface-1"></i> 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <a href="/blogs/@blog.Id"><h3>Hình ảnh với các bệnh nhân</h3></a>
+                                <p>@blog.Data.description</p>
+                                <span>Tag: <a href="blog-details.html">doctor, medicine</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+﻿
+  <section class="sec-padding contact-content appointment-content">
+		<div class="container">
+			<form action="inc/sendemail.php" id="appointment-page-form" class="contact-form row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-10" style="padding: 0;">
+								<input type="text" id="from" name="location" placeholder="Nhập vị trí của bạn">
+							</div>
+							<div class="col-md-2 text-right" style="padding-right: 0">
+								<button class="btn-successs" title="Lấy vị trí của bạn" style="height: 60px;" id="btnLocation">
+									<i class="fa fa-location-arrow" style="font-size: 25px;" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="select-input-wrapper">
+								<select class="select-input" style="width: 100%; cursor: pointer;padding: 20px 15px;" name="category">
+									
+								</select>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-12 text-center" style="padding:3% 0; "><button type="submit" id="btnFindRoute">Tìm</button></div>
+			</form>
+      <div class="col-md-12">
+        <div class="google-map" id="contact-page-google-map" data-icon-path="~/img/resources/map-marker.png"></div>
+      </div>
+		</div>
+
+
+	<div id="directorInfo"></div>
+
+  <script type="module" src="~/map/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZpVi_hP5tnzTZn19ikyGR3OH_9DgWeso&libraries=places"></script>
+</section>
+
+

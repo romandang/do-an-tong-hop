@@ -1,0 +1,204 @@
+﻿@model Glviangle.WebApp.Models.DoctorModel.DoctorVM
+@{ 
+	var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
+	var doctors = Model.doctors;
+}
+
+<section class="sec-padding meet-doctors team-page">
+		<div class="container">
+			<div class="row">
+				@foreach(var doctor in doctors)
+            {
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="@imagePath/@doctor.Data.avatar[0]" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>@doctor.Data.name</h3>
+						<span>@doctor.Data.specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="/doctors/@doctor.Id" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+            }
+				
+			 <!--
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/2.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Rashed Kabir</h3>						
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/3.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Jannatul Ferdous</h3>						
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/4.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Ashikur Rahman</h3>
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/1.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Dr. Muhibbur Rashid</h3>
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/2.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Rashed Kabir</h3>						
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/3.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Jannatul Ferdous</h3>						
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-team-member">
+						<div class="img-box">
+							<img src="img/team/4.jpg" alt="">
+							<div class="overlay">
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>DR. Ashikur Rahman</h3>
+						<span>Heart Specialist</span>
+						<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+						<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+					</div>
+				</div>
+
+				-->
+			</div>
+		</div>
+	</section>
+

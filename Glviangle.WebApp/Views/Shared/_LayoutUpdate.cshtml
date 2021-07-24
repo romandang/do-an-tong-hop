@@ -1,0 +1,277 @@
+﻿@using Glviangle.WebApp.Models.PageModel
+
+@{ 
+    var initView = ViewData["initView"] as View;
+    var header = initView.header.Data;
+    var footer = initView.footer.Data;
+    var blogs = initView.blogs;
+    var services = initView.services;
+    var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@initView.title</title>
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @if (initView.isNearPlace) { 
+      <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+      <script type="module" src="~/map/modules/data.js"></script>
+      <script type="module" src="~/map/modules/getDataClinic.js"></script>
+      <script type="module" src="~/map/modules/googleMap.js"></script>
+      <script src="https://use.fontawesome.com/b915c25d0c.js"></script>
+    }
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+</head>
+
+<body>
+    @if(!initView.isHomepage)
+            {
+                <section class="inner-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 sec-title colored text-center">
+					<h2>@initView.title</h2>
+					<ul class="breadcumb">
+						<li><a href="index.html">Home</a></li>
+						<li><i class="fa fa-angle-right"></i></li>
+						<li><span>@initView.title</span></li>
+					</ul>
+					<span class="decor"><span class="inner"></span></span>
+				</div>
+			</div>
+		</div>
+	</section>
+            }
+    <section class="top-bar">
+        <div class="container">
+
+            <div class="left-text pull-left">
+                <p><span>Opening Hours :</span> @header.workingtime</p>
+            </div> <!-- /.left-text -->
+
+            <div class="social-icons pull-right">
+                <ul>
+                    <li><a href="@header.social.facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="@header.social.twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="@header.social.google"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="@header.social.likeln"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="@header.social.pinterest"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </div> <!-- /.social-icons -->
+        </div>
+    </section> <!-- /.top-bar -->
+
+    <header class="header">
+        <div class="container">
+            <div class="logo pull-left">
+                <a href="index.html">
+                    <img src="@imagePath/@header.logo[0]" alt="Awesome Image" />
+                </a>
+            </div>
+            <div class="header-right-info pull-right clearfix">
+                <div class="single-header-info">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-interface"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>EMAIL</h3>
+                        <p>@header.email</p>
+                    </div>
+                </div>
+                <div class="single-header-info">
+                    <div class="icon-box">
+                        <div class="inner-box">
+                            <i class="flaticon-telephone"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Call Now</h3>
+                        <p><b>@header.phone</b></p>
+                    </div>
+                </div>
+                <div class="single-header-info">
+                    <a href="/booking" class="thm-btn">Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header> <!-- /.header -->
+
+
+    <nav class="mainmenu-area stricky">
+        <div class="container">
+            <div class="navigation pull-left">
+                <div class="nav-header">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li><a href="/about-us">Về chúng tôi</a></li>
+                        <li class="dropdown">
+                            <a href="/services">Dịch vụ</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/doctors">Bác sĩ</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/blogs">Bài viết</a>
+                        </li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <button><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="search-box pull-right">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav> <!-- /.mainmenu-area -->
+
+    @RenderBody();
+
+
+    <section class="footer-call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>Khẩn cấp</h3>
+                    <p>Tìm ngay các bệnh viện gần bạn</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="./near-place" class="thm-btn inverse pull-right">Tìm ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-widget about-widget">
+                        <a href="#">
+                            <img src="@imagePath/@footer.logo[0]" alt="Awesome Image" />
+                        </a>
+                        <p>@footer.description </p>
+                        <ul class="contact">
+                            <li><i class="fa fa-map-marker"></i> <span>@footer.address</span></li>
+                            <li><i class="fa fa-phone"></i> <span>@footer.phone</span></li>
+                            <li><i class="fa fa-envelope-o"></i> <span>@footer.email</span></li>
+                        </ul>
+                        <ul class="social">
+                            <li><a href="@footer.social.facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="@footer.social.twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="@footer.social.google"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="@footer.social.pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="@footer.social.likeln"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="footer-widget quick-links">
+                        <h3 class="title">Services</h3>
+                        <ul>
+                            @foreach(var service in services)
+                            {
+                                <li><a href="/services/@service.Id">@service.Data.title</a></li>
+                            }
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 latest-post col-sm-6">
+                    <div class="footer-widget latest-post">
+                        <h3 class="title">Latest News</h3>
+                        <ul>
+                            @foreach(var blog in blogs)
+                            {
+                            <li>
+                                <span class="border"></span>
+                                <div class="content">
+                                    <a href="blogs/@blog.Id">@blog.Data.title</a>
+                                    <span>@Html.Raw(@blog.Data.dateCreate)</span>
+                                </div>
+                            </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-widget contact-widget">
+                        <h3 class="title">Contact Form</h3>
+                        <form action="inc/sendemail.php" class="contact-form" id="footer-cf">
+                            <input type="text" name="name" placeholder="Full Name">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- main jQuery -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- bx slider -->
+    <script src="~/js/jquery.bxslider.min.js"></script>
+    <!-- appear js -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- count to -->
+    <script src="~/js/jquery.countTo.js"></script>
+    <!-- owl carousel -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!-- validate -->
+    <script src="~/js/validate.js"></script>
+    <!-- mixit up -->
+    <script src="~/js/jquery.mixitup.min.js"></script>
+    <!-- fancybox -->
+    <script src="~/js/jquery.fancybox.pack.js"></script>
+    <!-- easing -->
+    <script src="~/js/jquery.easing.min.js"></script>
+    <!-- isotope script -->
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="~/js/jquery-ui-1.11.4/jquery-ui.js"></script>
+
+    <!-- revolution scripts -->
+
+    <script src="~/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+    <!-- thm custom script -->
+    <script src="~/js/custom.js"></script>
+
+
+
+</body>
+</html>

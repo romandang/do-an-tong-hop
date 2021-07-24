@@ -1,0 +1,484 @@
+﻿@model Glviangle.WebApp.Models.AboutUsModel.AboutUsVM
+@{
+	var imagePath = "https://cloud.squidex.io/api/assets/glviangle";
+	var doctors = Model.doctors;
+	var specializes = Model.specializes;
+	var content = Model.aboutus.Data;
+}
+
+	
+	<section class="sec-padding about-content full-sec">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-5 col-md-12">
+					<div class="full-sec-content">
+						<div class="sec-title style-two">
+							<h2>@content.title</h2>
+							<span class="decor">
+								<span class="inner"></span>
+							</span>
+						</div>
+						<h3>@content.subtitle</h3>
+						<br>
+							@Html.Raw(content.content)
+						<br>
+						<a href="about.html" class="thm-btn">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-7 hidden-md text-right">
+					<img src="img/resources/about-1.jpg" alt="Awesome Image"/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="sec-padding col-4">
+		<div class="container">
+			
+			<div class="row">
+				@foreach(var specialize in specializes)
+            {
+					<div class="col-md-3">
+					<div class="single-specialize">
+						<div class="icon-box">
+							<i class="@specialize.Data.thumbnailIcon"></i>
+						</div>
+						<a href="/services/@specialize.Id"><h3>@specialize.Data.title</h3></a>
+						<p>@specialize.Data.description</p>
+					</div>
+				</div>
+            }
+				
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="sec-padding faq-home">
+		<div class="container">
+			<hr>
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="sec-title style-two">
+						<h2>Why Choose us?</h2>
+						<span class="decor">
+							<span class="inner"></span>
+						</span>
+					</div>
+					<div class="accrodion-grp" data-grp-name="faq-accrodion">
+						@foreach(var detail in content.whychooseus)
+						{
+							<div class="accrodion active">
+							<div class="accrodion-title">
+								<h4>
+									<span class="decor">
+										<span class="inner"></span>
+									</span>
+									<span class="text">@detail.title</span>
+								</h4>
+							</div>
+							<div class="accrodion-content">
+								@Html.Raw(detail.description)
+							</div>
+						</div>
+						}
+
+					</div>
+				</div>
+				<div class="col-md-6 hidden-md">
+					<div class="img-masonary">
+						<div class="img-w1">
+							<img src="@imagePath/@content.images1[0]" height="450" width="280" alt="">
+						</div>
+						<div class="img-w1 img-h1">
+							<img src="@imagePath/@content.images2[0]" height="450" width="280" alt="">
+						</div>
+						<div class="img-w1 img-h1">
+							<img src="@imagePath/@content.images3[0]" height="450" width="280" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="fact-counter-wrapper sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-4">
+					<h2>We are served since <b>35 years</b> <br>to our customer with trust and <br>we are happy</h2>
+					<a href="#" class="thm-btn inverse">Be a part of us</a>
+				</div>
+				<div class="col-lg-6 col-md-8">
+					<div class="single-fact">
+						<div class="icon-box">
+							<i class="flaticon-cup"></i>
+						</div>
+						<span class="timer" data-from="10" data-to="365" data-speed="5000" data-refresh-interval="50">365</span>
+						<p>Total Awards</p>
+					</div>
+					<div class="single-fact">
+						<div class="icon-box">
+							<i class="flaticon-people-3"></i>
+						</div>
+						<span class="timer" data-from="10" data-to="155" data-speed="5000" data-refresh-interval="50">155</span>
+						<p>Total Doctors</p>
+					</div>
+					<div class="single-fact">
+						<div class="icon-box">
+							<i class="flaticon-other"></i>
+						</div>
+						<span class="timer" data-from="10" data-to="2200" data-speed="5000" data-refresh-interval="50">2200</span>
+						<p>Total Beds</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="sec-padding meet-doctors ">
+		<div class="container">
+			<div class="sec-title text-left">
+				<h2>Meet Our Doctors</h2>
+				<p>Lorem ipsum is a dummy text it will use for subtitle here</p>
+				<span class="decor"><span class="inner"></span></span>
+			</div>
+			<div class="clearfix">
+				<div class="team-carousel owl-carousel owl-theme">
+					@foreach(var doctor in doctors)
+					{
+						<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="@imagePath/@doctor.Data.avatar[0]" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="@doctor.Data.profile[0].facebook"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="@doctor.Data.profile[0].twitter"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="@doctor.Data.profile[0].instagram"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="@doctor.Data.profile[0].google"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>@doctor.Data.name</h3>
+							<span>@doctor.Data.specialist</span>
+							<p>@doctor.Data.profile[0].degrees</p>
+							<a href="/doctors/@doctor.Id" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					}
+					<!-- 
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/2.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Rashed Kabir</h3>						
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/3.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Jannatul Ferdous</h3>						
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/4.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Ashikur Rahman</h3>
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/1.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>Dr. Muhibbur Rashid</h3>
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/2.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Rashed Kabir</h3>						
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/3.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Jannatul Ferdous</h3>						
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-team-member">
+							<div class="img-box">
+								<img src="img/team/4.jpg" alt="">
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>DR. Ashikur Rahman</h3>
+							<span>Heart Specialist</span>
+							<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
+							<a href="doctor-profile.html" class="thm-btn">View Profile</a>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="sec-padding testimonials-wrapper">
+		<div class="container">
+			<div class="sec-title colored text-center">
+				<h2>Testimonials</h2>
+				<span class="decor">
+					<span class="inner"></span>
+				</span>
+			</div>
+			<div class="testimonaials-carousel owl-carousel owl-theme">
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="single-testimonaials">
+						<div class="qoute-box">
+							<i class="qoute">“</i>
+						</div>
+						<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
+						<h3>Roberto Carlos</h3>
+						<span>Patient of Asthama</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	

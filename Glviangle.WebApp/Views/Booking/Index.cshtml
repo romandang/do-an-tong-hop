@@ -1,0 +1,59 @@
+﻿
+	<section class="sec-padding contact-content appointment-content">
+		<div class="container">
+			<img src="img/resources/appointment.jpg" alt="Awesome Image"/>
+			<div class="title-box">
+				<span>It’s easy and fast</span>
+				<h3>Make an Appoinment</h3>
+				<p>Lorem ipsum dolor sit amet, eum illum dolore concludaturque ex, ius latine adipisci no. Pro at nullam laboramus definitiones. Mandamus conceptam omittantur cu cum. Brute appetere it scriptorem ei eam, ne vim velit novum nominati. Causae volutpat percipitur at sed ne.</p>				
+			</div>
+			@using (Html.BeginForm("Post", "Booking", FormMethod.Post, new {@id="appointment-page-form", @class="contact-form row" }))
+			{ 
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" name="name" placeholder="Full Name">
+							<input type="text" placeholder="Select Appointment Date" name="date" class="date-picker">
+							<input type="text" name="phone" placeholder="Phone">
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="email" placeholder="Email">
+							<div class="select-input-wrapper">
+								<select class="select-input" name="category">
+									<option value="" selected="selected">Select Category</option>
+									<option value="General Motors">Primary Health Care</option>
+									<option value="Land Rover">Dental Care</option>
+									<option value="Lexus">Neurology</option>
+									<option value="Lincoln">Kidney Treatment</option>
+									<option value="Lincoln">Eye Treatment</option>
+								</select>
+							</div>
+							<div class="clearfix half-wrapper">
+								<div class="col-md-6 p0 half">
+									<div class="select-input-wrapper">
+										<select class="select-input" name="gender">
+											<option value="" selected="selected">Select Gender</option>
+											<option value="General Motors">Male</option>
+											<option value="General Motors">Female</option>
+										</select>
+									</div>										
+								</div>
+								<div class="col-md-6 p0 half">
+									<input type="text" placeholder="Date Of Birth" name="dateOfBirth" class="date-picker">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-5">
+					<textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="col-md-12"><button type="submit">Book Now</button></div>
+			}
+
+				
+			
+		</div>
+	</section>
+	

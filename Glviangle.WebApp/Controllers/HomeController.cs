@@ -1,41 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Glviangle.WebApp.Helper;
 using Glviangle.WebApp.Models;
-using Glviangle.Helper;
+using Glviangle.WebApp.Models.BlogModel;
+using Glviangle.WebApp.Models.PageModel;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Glviangle.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IApiClient apiClient;
+        private RenderView _renderView;
+
+        public HomeController(IApiClient apiClient)
         {
-            _logger = logger;
+            this.apiClient = apiClient;
+            _renderView = new RenderView(apiClient);
         }
 
         public async Task<IActionResult> Index()
         {
-            var pageName = "homepage";
-            var model = RenderHelper.ReadHtmlString(pageName);
-            await Task.CompletedTask;
-            return View(model);
+            string idPage = "c830d962-ffce-4436-b23f-5219f3624926";
+            var data = await apiClient.GetHomeAsync(idPage);
+            var(total, blogs) = await apiClient.GetBlogAsync(0, 3);
+            var initView = await _renderView.Render();
+            var vm = new BlogVM
+            {
+                listBlog = blogs,
+                total = total,
+                page = 0,
+                pageSize = 3,
+                home = data
+            };
+            initView.title = "Home";
+            initView.isHomepage = true;
+            ViewData["initView"] = initView;
+            return View(vm);
         }
 
-        public IActionResult Privacy()
+        [Route("/error")]
+        public async Task<IActionResult> NotFound()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
