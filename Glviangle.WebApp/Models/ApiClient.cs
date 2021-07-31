@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 using Glviangle.WebApp.Models.AboutUsModel;
 using Glviangle.WebApp.Models.BlogModel;
 using Glviangle.WebApp.Models.BookingModel;
+using Glviangle.WebApp.Models.BookingRoomModel;
 using Glviangle.WebApp.Models.DoctorModel;
 using Glviangle.WebApp.Models.FooterModel;
 using Glviangle.WebApp.Models.HeaderModel;
 using Glviangle.WebApp.Models.HomeModel;
 using Glviangle.WebApp.Models.ServiceModel;
 using Glviangle.WebApp.Models.SpecializeModel;
+using Glviangle.WebApp.Models.TimeBookingModel;
 using Microsoft.Extensions.Options;
 using Squidex.ClientLibrary;
 
@@ -33,6 +35,8 @@ namespace Glviangle.WebApp.Models
         private readonly IContentsClient<Header, HeaderData> headerClient;
         private readonly IContentsClient<Footer, FooterData> footerClient;
         private readonly IContentsClient<Booking, BookingData> bookingClient;
+        private readonly IContentsClient<TimeBooking, TimeBookingData> timeBookingClient;
+        private readonly IContentsClient<BookingRoom, BookingRoomData> bookingRoomClient;
 
         public ApiClient(IOptions<SquidexOptions> appOptions)
         {
@@ -51,6 +55,8 @@ namespace Glviangle.WebApp.Models
             headerClient = clientManager.CreateContentsClient<Header, HeaderData>("header");
             footerClient = clientManager.CreateContentsClient<Footer, FooterData>("footer");
             bookingClient = clientManager.CreateContentsClient<Booking, BookingData>("booking");
+            timeBookingClient = clientManager.CreateContentsClient<TimeBooking, TimeBookingData>("time-booking");
+            bookingRoomClient = clientManager.CreateContentsClient<BookingRoom, BookingRoomData>("booking-room");
         }
 
         public async Task<(long Total, List<Blog> blogs)> GetBlogAsync(int page = 0, int pageSize = 3)
@@ -88,9 +94,30 @@ namespace Glviangle.WebApp.Models
             return (posts.Total, posts.Items);
         }
 
+        public async Task<List<TimeBooking>> GetListTimeBookingAsync()
+        {
+            var query = new ContentQuery { };
+
+            var posts = await timeBookingClient.GetAsync(query);
+
+            return posts.Items;
+        }
+
         public async Task<Booking> PostBookingAsync(BookingData booking)
         {
             var data = await bookingClient.CreateAsync(booking);
+            return data;
+        }
+
+        public async Task<TimeBooking> UpdateTimeBookingAsync(TimeBooking timeBooking)
+        {
+            var data = await timeBookingClient.UpdateAsync(timeBooking);
+            return data;
+        }
+
+        public async Task<BookingRoom> PostBookingRoomAsync(BookingRoomData bookingRoom)
+        {
+            var data = await bookingRoomClient.CreateAsync(bookingRoom);
             return data;
         }
 

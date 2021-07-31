@@ -8,12 +8,14 @@
 using Glviangle.WebApp.Models.AboutUsModel;
 using Glviangle.WebApp.Models.BlogModel;
 using Glviangle.WebApp.Models.BookingModel;
+using Glviangle.WebApp.Models.BookingRoomModel;
 using Glviangle.WebApp.Models.DoctorModel;
 using Glviangle.WebApp.Models.FooterModel;
 using Glviangle.WebApp.Models.HeaderModel;
 using Glviangle.WebApp.Models.HomeModel;
 using Glviangle.WebApp.Models.ServiceModel;
 using Glviangle.WebApp.Models.SpecializeModel;
+using Glviangle.WebApp.Models.TimeBookingModel;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -25,7 +27,7 @@ namespace Glviangle.WebApp.Models
         Task<(long Total, List<Doctor> doctors)> GetListDoctorAsync(int page = 0, int pageSize = 3);
         Task<(long Total, List<Service> services)> GetListServiceAsync(int page = 0, int pageSize = 3);
         Task<(long Total, List<Specialize> specializes)> GetListSpecializeAsync(int page, int pageSize);
-
+        Task<TimeBooking> UpdateTimeBookingAsync(TimeBooking timeBooking);
         Task<Specialize> GetDetailSpecializeAsync(string id);
         Task<Blog> GetDetailBlogAsync(string id);
         Task<Doctor> GetDetailDoctorAsync(string id);
@@ -35,5 +37,7 @@ namespace Glviangle.WebApp.Models
         Task<Header> GetDetailHeaderAsync(string id);
         Task<Footer> GetDetailFooterAsync(string id);
         Task<Booking> PostBookingAsync(BookingData booking);
+        Task<BookingRoom> PostBookingRoomAsync(BookingRoomData bookingRoom);
+        Task<List<TimeBooking>> GetListTimeBookingAsync();
     }
 }

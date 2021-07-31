@@ -10,7 +10,7 @@ export class Clinic {
     this.data.hospital = hospitalData;
   }
 
-  async _init(myLatLng) {
+  _init(myLatLng) {
     const self = this;
     // var data = self._separateAddress(self.data.hospital);
     self._getLocation(myLatLng);
@@ -32,9 +32,10 @@ export class Clinic {
         location: `${myLatLng.lat}, ${myLatLng.lng}`,
         radius: "5000",
         type: "hospital",
-        key: "AIzaSyDZpVi_hP5tnzTZn19ikyGR3OH_9DgWeso",
+        key: "AIzaSyAk_T9lzF_FhLQ8E9j9AGDz1xN9IJD-vuQ",
       },
       function (data, status, xhr) {
+        console.log(data);
         const arrayData = [];
         const arrayDistance = [];
         /**

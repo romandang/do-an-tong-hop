@@ -71,6 +71,7 @@ export class GoogleMap {
     const clinic = new Clinic();
     clinic._init(myLatLng);
   }
+
   _initRouteMap() {
     const self = this;
     const myLatLng = self.data.myLatLng;
@@ -133,10 +134,6 @@ export class GoogleMap {
       }
       marker.setPosition(place.geometry.location);
       marker.setVisible(true);
-      infowindowContent.children["place-name"].textContent = place.name;
-      infowindowContent.children["place-address"].textContent =
-        place.formatted_address;
-      infowindow.open(map, marker);
     });
   }
 
@@ -158,13 +155,13 @@ export class GoogleMap {
       const output = document.querySelector(`#${self.data.info}`);
       if (status == google.maps.DirectionsStatus.OK) {
         output.innerHTML =
-          "<div class='alert-info'>From: " +
+          "<div class='alert-info'>Từ: " +
           from +
-          ".<br />To: " +
+          ".<br />Đến: " +
           destination +
-          ".<br /> Driving distance <i class='fas fa-road'></i> : " +
+          ".<br /> Khoảng cách: " +
           result.routes[0].legs[0].distance.text +
-          ".<br />Duration <i class='fas fa-hourglass-start'></i> : " +
+          ".<br />Ước tính: " +
           result.routes[0].legs[0].duration.text +
           ".</div>";
         directionsDisplay.setDirections(result);

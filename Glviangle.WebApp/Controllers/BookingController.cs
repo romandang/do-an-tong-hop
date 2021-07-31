@@ -31,7 +31,7 @@ namespace Glviangle.WebApp.Controllers
             var data = await _apiClient.PostBookingAsync(booking);
             
             var initView = await _renderView.Render();
-            initView.title = "Appoinment";
+            initView.title = "Đặt lịch ngay";
             ViewData["initView"] = initView;
             return Redirect("/booking");
         }

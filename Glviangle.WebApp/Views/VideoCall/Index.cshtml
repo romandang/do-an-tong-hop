@@ -1,0 +1,157 @@
+﻿@model Glviangle.WebApp.Models.TimeBookingModel.TimeBookingVM
+ 
+	<section class="sec-padding contact-content appointment-content">
+		<script src="~/js/jquery-1.11.1.min.js"></script>
+		<style>
+			.btn-time-booking.disabled{
+				background: grey;
+				pointer-events: none;
+				border-color: grey;
+				color: white;
+			}
+			.btn-time-booking{
+				cursor: pointer;
+			}
+			.btn-time-booking.thm-btn:hover {
+				background: #186AAB;
+				color: white;
+			}
+
+			.col-md-3 {
+				padding: 1% 0;
+			}
+
+			.list-time-frame {
+				margin: 0 0 2% 0;
+			}
+		</style>
+		<div class="container">
+			<img src="img/resources/appointment.jpg" alt="Awesome Image"/>
+			<div class="title-box">
+				<h3>Trải nghiệm tư vấn trực tuyến</h3>
+				<p>Để giải đáp thông tin và tư vấn khám chữa bệnh trong thời gian dịch bệnh COVID 19 diễn biến phức tạp.</p>				
+			</div>
+
+			
+
+			@using (Html.BeginForm("Post", "VideoCall", FormMethod.Post, new {@id="appointment-page-form", @class="contact-form row" }))
+			{ 
+				<input type="hidden" name="clientLinkCall" id="clientLinkCall" />
+				<input type="hidden" name="secLinkCall" id="secLinkCall" />
+				<div class="col-md-12 text-center list-time-frame">
+				@foreach(var item in Model.timeBookings)
+				{
+					<div class="col-md-12 text-center">
+						<h3>@item.Data.dayname</h3>
+						<span>
+							@item.Data.date.ToString("dd/MM/yyyy")
+						</span>
+					</div>
+					<div class="col-md-12">
+						@foreach(var time in item.Data.timeFrame)
+						{
+							<div class="col-md-3">
+								@if (time.isBooking)
+								{ 
+									<a class="thm-btn inverse btn-time-booking disabled">
+										@time.timeFrom.ToString("hh:mm") - @time.timeTo.ToString("hh:mm")
+										<span style="display: none;" class="idTimeFrame">@time.id</span>
+									</a>
+								} else
+								{
+									<a class="thm-btn inverse btn-time-booking" disabled="@time.isBooking">
+									@time.timeFrom.ToString("hh:mm") - @time.timeTo.ToString("hh:mm")
+										<span style="display: none;" class="idTimeFrame">@time.id</span>
+									</a>
+								}
+								
+								<span style="display: none;" class="timeFrom">@time.timeFrom.ToString("dd/MM/yyyy hh:mm")</span>
+								<span style="display: none;" class="timeTo">@time.timeTo.ToString("dd/MM/yyyy hh:mm")</span>
+								
+		
+							</div>
+						}
+						<input type="hidden" id="timeFrom" name="timeFrom" value="" />
+						<input type="hidden" id="timeTo" name="timeTo" value="" />
+						<input type="hidden" id="idTimeBooking" name="idTimeBooking" value=@item.Id />
+						<input type="hidden" id="idTimeFrame" name="idTimeFrame" value="" />
+
+						<script>
+							$.ajax({
+								url: "http://localhost/glviangle-token/get-token.php",
+								method: "GET",
+								dataType: "json",
+								success: function (response) {
+									$("#clientLinkCall").val(`https://${window.location.hostname}:${window.location.port}/client-call/${response.access_token_client}`);
+									$("#secLinkCall").val(`https://${window.location.hostname}:${window.location.port}/sec-call/${response.access_token_sec}`);
+								}
+							});
+							const btnBookings = document.querySelectorAll(".btn-time-booking");
+							console.log(btnBookings);
+							for (let i = 0; i < btnBookings.length; i++) {
+								btnBookings[i].addEventListener('click', function () {
+									$("#timeFrom").val("");
+									$("#timeTo").val("");
+									for (let j = 0; j < btnBookings.length; j++) {
+										btnBookings[j].classList.add("inverse");
+									}
+									btnBookings[i].classList.toggle("inverse");
+						
+									$("#idTimeFrame").val($(btnBookings[i]).find('span').html());
+									$("#timeFrom").val($(".timeFrom").html());
+									$("#timeTo").val($(".timeTo").html());
+									});
+								}
+						
+							
+							
+						</script>
+					</div>
+				}
+			</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" name="name" id="name" placeholder="Họ và tên">
+							<input type="text" name="phone" id="phone" placeholder="Số điện thoại">
+						</div>
+						<div class="col-md-6">
+							<div class="select-input-wrapper">
+								<select class="select-input" id="service" name="service">
+									<option value="" selected="selected">Chọn dịch vụ</option>
+									<option value="General Motors">Primary Health Care</option>
+									<option value="Land Rover">Dental Care</option>
+									<option value="Lexus">Neurology</option>
+									<option value="Lincoln">Kidney Treatment</option>
+									<option value="Lincoln">Eye Treatment</option>
+								</select>
+							</div>
+							<div class="clearfix half-wrapper">
+								<div class="col-md-6 p0 half">
+									<div class="select-input-wrapper">
+										<select class="select-input" id="gender" name="gender">
+											<option value="" selected="selected">Chọn giới tính</option>
+											<option value="nam">Nam</option>
+											<option value="nu">Nữ</option>
+										</select>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-5">
+					<textarea name="message" id="message" placeholder="Tin nhắn" cols="30" rows="10"></textarea>
+				</div>
+
+				
+				<div class="col-md-12"><button onclick="validateFormTuvan();" type="submit">Đặt lịch ngay</button></div>
+			}
+
+				
+			
+		</div>
+		<script src="~/validated/bookingValidate.js"></script>
+	</section>
+	

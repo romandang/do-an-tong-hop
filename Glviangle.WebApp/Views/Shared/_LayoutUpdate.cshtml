@@ -25,6 +25,7 @@
       <script src="https://use.fontawesome.com/b915c25d0c.js"></script>
     }
     <!-- master stylesheet -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="~/css/style.css">
     <!-- responsive stylesheet -->
     <link rel="stylesheet" href="~/css/responsive.css">
@@ -53,7 +54,7 @@
         <div class="container">
 
             <div class="left-text pull-left">
-                <p><span>Opening Hours :</span> @header.workingtime</p>
+                <p><span>Giờ làm việc :</span> @header.workingtime</p>
             </div> <!-- /.left-text -->
 
             <div class="social-icons pull-right">
@@ -94,12 +95,12 @@
                         </div>
                     </div>
                     <div class="content">
-                        <h3>Call Now</h3>
+                        <h3>Gọi ngay</h3>
                         <p><b>@header.phone</b></p>
                     </div>
                 </div>
                 <div class="single-header-info">
-                    <a href="/booking" class="thm-btn">Appointment</a>
+                    <a href="/booking" class="thm-btn">Đặt lịch ngay</a>
                 </div>
             </div>
         </div>
@@ -124,7 +125,7 @@
                         <li class="dropdown">
                             <a href="/blogs">Bài viết</a>
                         </li>
-                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="/contact-us">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="nav-footer">
@@ -183,7 +184,7 @@
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <div class="footer-widget quick-links">
-                        <h3 class="title">Services</h3>
+                        <h3 class="title">Dịch vụ</h3>
                         <ul>
                             @foreach(var service in services)
                             {
@@ -195,7 +196,7 @@
                 </div>
                 <div class="col-md-3 latest-post col-sm-6">
                     <div class="footer-widget latest-post">
-                        <h3 class="title">Latest News</h3>
+                        <h3 class="title">Bài viết mới nhất</h3>
                         <ul>
                             @foreach(var blog in blogs)
                             {
@@ -212,12 +213,12 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-widget contact-widget">
-                        <h3 class="title">Contact Form</h3>
+                        <h3 class="title">Liên hệ</h3>
                         <form action="inc/sendemail.php" class="contact-form" id="footer-cf">
                             <input type="text" name="name" placeholder="Full Name">
                             <input type="text" name="email" placeholder="Email Address">
                             <textarea name="message" placeholder="Your Message"></textarea>
-                            <button type="submit">Send</button>
+                            <button type="submit">Gửi</button>
                         </form>
                     </div>
                 </div>

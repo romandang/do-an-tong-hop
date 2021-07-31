@@ -278,3 +278,7 @@ D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razo
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Index.cshtml.g.cs
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Booking\Index.cshtml.g.cs
 D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Appointment\Index.cshtml.g.cs
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\VideoCall\Client.cshtml.g.cs
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\VideoCall\Sec.cshtml.g.cs
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\VideoCall\Index.cshtml.g.cs
+D:\PROJECT_DOAN\glevieagle-project\Glviangle.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
